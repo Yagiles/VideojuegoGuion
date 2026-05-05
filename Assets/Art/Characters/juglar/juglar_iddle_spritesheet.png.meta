@@ -1,0 +1,455 @@
+fileFormatVersion: 2
+guid: 8031ba88f8f60c045b53145f32c94703
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9126766322985203334
+    second: juglar_iddle_spritesheet_0
+  - first:
+      213: -4653522028184289608
+    second: juglar_iddle_spritesheet_1
+  - first:
+      213: 2457033175396319144
+    second: juglar_iddle_spritesheet_2
+  - first:
+      213: 6832965869790580041
+    second: juglar_iddle_spritesheet_3
+  - first:
+      213: -411195709751491572
+    second: juglar_iddle_spritesheet_4
+  - first:
+      213: -746308725234206761
+    second: juglar_iddle_spritesheet_5
+  - first:
+      213: 8565126167169394227
+    second: juglar_iddle_spritesheet_6
+  - first:
+      213: -7892555759668038093
+    second: juglar_iddle_spritesheet_7
+  - first:
+      213: 5992784193512135266
+    second: juglar_iddle_spritesheet_8
+  - first:
+      213: -6569427932688053645
+    second: juglar_iddle_spritesheet_9
+  - first:
+      213: -1602553644774274474
+    second: juglar_iddle_spritesheet_10
+  - first:
+      213: 7958236298738573275
+    second: juglar_iddle_spritesheet_11
+  - first:
+      213: -8445287602959554438
+    second: juglar_iddle_spritesheet_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: juglar_iddle_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 83
+        width: 273
+        height: 345
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 686f7857d99c8ae70800000000000000
+      internalID: 9126766322985203334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juglar_iddle_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 83
+        width: 270
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bebe9bee5e5b6fb0800000000000000
+      internalID: -4653522028184289608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juglar_iddle_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 86
+        width: 267
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aff8d4b7a2291220800000000000000
+      internalID: 2457033175396319144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juglar_iddle_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 1598
+        y: 78
+        width: 265
+        height: 345
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94d4c37814293de50800000000000000
+      internalID: 6832965869790580041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juglar_iddle_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 2049
+        y: 82
+        width: 259
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c04091b3ea32b4af0800000000000000
+      internalID: -411195709751491572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juglar_iddle_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 2494
+        y: 82
+        width: 256
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d7f3a32b2494a5f0800000000000000
+      internalID: -746308725234206761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juglar_iddle_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 2936
+        y: 83
+        width: 253
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 336e88a7ed07dd670800000000000000
+      internalID: 8565126167169394227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juglar_iddle_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 3375
+        y: 88
+        width: 255
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 336f5076a52087290800000000000000
+      internalID: -7892555759668038093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juglar_iddle_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 3813
+        y: 87
+        width: 259
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26adddd0975aa2350800000000000000
+      internalID: 5992784193512135266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juglar_iddle_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 4252
+        y: 83
+        width: 261
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37a899ef914b4d4a0800000000000000
+      internalID: -6569427932688053645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juglar_iddle_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 4691
+        y: 83
+        width: 264
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65ac8b563f592c9e0800000000000000
+      internalID: -1602553644774274474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juglar_iddle_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 5130
+        y: 88
+        width: 267
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdf9ee8cfb5517e60800000000000000
+      internalID: 7958236298738573275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juglar_iddle_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 5569
+        y: 83
+        width: 270
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a78e59f8baf4cca80800000000000000
+      internalID: -8445287602959554438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      juglar_iddle_spritesheet_0: 9126766322985203334
+      juglar_iddle_spritesheet_1: -4653522028184289608
+      juglar_iddle_spritesheet_10: -1602553644774274474
+      juglar_iddle_spritesheet_11: 7958236298738573275
+      juglar_iddle_spritesheet_12: -8445287602959554438
+      juglar_iddle_spritesheet_2: 2457033175396319144
+      juglar_iddle_spritesheet_3: 6832965869790580041
+      juglar_iddle_spritesheet_4: -411195709751491572
+      juglar_iddle_spritesheet_5: -746308725234206761
+      juglar_iddle_spritesheet_6: 8565126167169394227
+      juglar_iddle_spritesheet_7: -7892555759668038093
+      juglar_iddle_spritesheet_8: 5992784193512135266
+      juglar_iddle_spritesheet_9: -6569427932688053645
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
