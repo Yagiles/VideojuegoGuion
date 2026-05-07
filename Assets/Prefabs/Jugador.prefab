@@ -182,9 +182,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovimientoJugador2D
   velocidad: 6
-  fuerzaSalto: 7
+  fuerzaSalto: 5
+  saltosMaximos: 2
   detectorSuelo: {fileID: 7985776899433255121}
-  radioSuelo: 0.3
+  radioSuelo: 0.6
   capaSuelo:
     serializedVersion: 2
     m_Bits: 8
