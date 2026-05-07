@@ -7,24 +7,26 @@ public class GuiaMovimiento : MonoBehaviour
     private Rigidbody2D rbJugador;
 
     [Header("Movimiento guia")]
-    public float velocidad = 6f;
-    public float distanciaDelante = 2f;
+    public float velocidad = 10f;
+    public float distanciaDelante = 6f;
     public float margenParada = 0.1f;
 
     [Header("Direccion del camino")]
     public int direccionObjetivo = 1; // 1 derecha, -1 izquierda
 
     [Header("Flotacion")]
-    public float alturaFlotacion = 0.25f;
+    public float alturaSobreSuelo = 1.5f;
+    public float alturaFlotacion = 0.2f;
     public float velocidadFlotacion = 2f;
+    public float suavizadoVertical = 0.15f;
+    public float alturaMaximaSobreJugador = 3f;
 
-    private float posicionInicialY;
+    [Header("Deteccion suelo")]
+    public LayerMask capaSuelo;
+    public float distanciaRaycastAbajo = 8f;
+    public float distanciaDeteccionDelante = 2f;
 
-    [Header("Patrulla futura")]
-    public bool usarPatrulla = false;
-    public Transform puntoA;
-    public Transform puntoB;
-    private Vector2 objetivoActual;
+    private float velocidadVerticalSuavizada;
 
     void Start()
     {
@@ -41,25 +43,12 @@ public class GuiaMovimiento : MonoBehaviour
         {
             Debug.LogError("No se encontro ningun objeto con tag Player");
         }
-
-        posicionInicialY = transform.position.y;
-
-        if (puntoB != null)
-            objetivoActual = puntoB.position;
     }
 
     void FixedUpdate()
     {
-        Flotar();
-
-        if (usarPatrulla)
-        {
-            Patrullar();
-        }
-        else
-        {
-            IrEnDireccionObjetivo();
-        }
+        IrEnDireccionObjetivo();
+        AjustarAlturaSobreSuelo();
     }
 
     void IrEnDireccionObjetivo()
@@ -93,29 +82,68 @@ public class GuiaMovimiento : MonoBehaviour
         }
     }
 
-    void Flotar()
+    void AjustarAlturaSobreSuelo()
     {
-        float nuevaY = posicionInicialY + Mathf.Sin(Time.time * velocidadFlotacion) * alturaFlotacion;
-        transform.position = new Vector3(transform.position.x, nuevaY, transform.position.z);
+        float sueloY = BuscarSueloMasAlto();
+
+        if (sueloY == Mathf.NegativeInfinity)
+            return;
+
+        float flotacion = Mathf.Sin(Time.time * velocidadFlotacion) * alturaFlotacion;
+        float objetivoY = sueloY + alturaSobreSuelo + flotacion;
+
+        // Limite para que el guia no se vaya demasiado arriba
+        float alturaMaxima = jugador.position.y + alturaMaximaSobreJugador;
+        objetivoY = Mathf.Min(objetivoY, alturaMaxima);
+
+        float diferenciaY = objetivoY - rb.position.y;
+        float velocidadY = diferenciaY / suavizadoVertical;
+
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, velocidadY);
     }
 
-    void Patrullar()
+    float BuscarSueloMasAlto()
     {
-        if (puntoA == null || puntoB == null)
-        {
-            rb.linearVelocity = Vector2.zero;
-            return;
-        }
+        float sueloMasAlto = Mathf.NegativeInfinity;
 
-        float direccion = Mathf.Sign(objetivoActual.x - transform.position.x);
-        rb.linearVelocity = new Vector2(direccion * velocidad, rb.linearVelocity.y);
+        Vector2 origenCentro = rb.position;
+        Vector2 origenDelante = rb.position + new Vector2(direccionObjetivo * distanciaDeteccionDelante, 0f);
 
-        if (Vector2.Distance(transform.position, objetivoActual) < 0.1f)
-        {
-            if (objetivoActual == (Vector2)puntoA.position)
-                objetivoActual = puntoB.position;
-            else
-                objetivoActual = puntoA.position;
-        }
+        sueloMasAlto = Mathf.Max(sueloMasAlto, RaycastSuelo(origenCentro));
+        sueloMasAlto = Mathf.Max(sueloMasAlto, RaycastSuelo(origenDelante));
+
+        return sueloMasAlto;
+    }
+
+    float RaycastSuelo(Vector2 origen)
+    {
+        Vector2 origenAlto = origen + Vector2.up * distanciaRaycastAbajo * 0.5f;
+
+        RaycastHit2D hit = Physics2D.Raycast(
+            origenAlto,
+            Vector2.down,
+            distanciaRaycastAbajo,
+            capaSuelo
+        );
+
+        if (hit.collider != null)
+            return hit.point.y;
+
+        return Mathf.NegativeInfinity;
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.DrawLine(
+            transform.position + Vector3.up * distanciaRaycastAbajo * 0.5f,
+            transform.position + Vector3.down * distanciaRaycastAbajo * 0.5f
+        );
+
+        Vector3 posicionDelante = transform.position + new Vector3(direccionObjetivo * distanciaDeteccionDelante, 0f, 0f);
+
+        Gizmos.DrawLine(
+            posicionDelante + Vector3.up * distanciaRaycastAbajo * 0.5f,
+            posicionDelante + Vector3.down * distanciaRaycastAbajo * 0.5f
+        );
     }
 }
