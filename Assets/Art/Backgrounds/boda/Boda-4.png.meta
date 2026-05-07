@@ -1,13 +1,16 @@
 fileFormatVersion: 2
-guid: 8085c86a27127ad4d8a278f1480e8f68
+guid: 2e6a8c621d55eee4f9e6b7dd434a6140
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 99892815572537656
-    second: suelo_0
+      213: -7761442689234753117
+    second: Boda-4_0
   - first:
-      213: -3534857781735327167
-    second: suelo_1
+      213: 1780905694112596232
+    second: Boda-4_1
+  - first:
+      213: -4251412761734616482
+    second: Boda-4_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +52,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: suelo_0
+      name: Boda-4_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 5872
-        height: 1080
+        x: 465
+        y: 160
+        width: 138
+        height: 920
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +121,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 83190db8cf3e26100800000000000000
-      internalID: 99892815572537656
+      spriteID: 3a92c9bfef0d94490800000000000000
+      internalID: -7761442689234753117
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: suelo_1
+      name: Boda-4_1
       rect:
         serializedVersion: 2
-        x: 5839
-        y: 0
-        width: 1841
-        height: 1080
+        x: 624
+        y: 163
+        width: 417
+        height: 917
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +143,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 14af3247399a1fec0800000000000000
-      internalID: -3534857781735327167
+      spriteID: 8014d0c0b4c07b810800000000000000
+      internalID: 1780905694112596232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boda-4_2
+      rect:
+        serializedVersion: 2
+        x: 3189
+        y: 234
+        width: 652
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5aee3f3e92fff4c0800000000000000
+      internalID: -4251412761734616482
       vertices: []
       indices: 
       edges: []
@@ -150,7 +175,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -160,8 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      suelo_0: 99892815572537656
-      suelo_1: -3534857781735327167
+      Boda-4_0: -7761442689234753117
+      Boda-4_1: 1780905694112596232
+      Boda-4_2: -4251412761734616482
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
