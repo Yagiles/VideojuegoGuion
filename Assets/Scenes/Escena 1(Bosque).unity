@@ -252,6 +252,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 25045251}
   m_CullTransparentMesh: 1
+--- !u!1 &292029911 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8259640040495054104, guid: 758c1d2e6b37437449522b50f5280ad2, type: 3}
+  m_PrefabInstance: {fileID: 366441245569724296}
+  m_PrefabAsset: {fileID: 0}
 --- !u!225 &474594292 stripped
 CanvasGroup:
   m_CorrespondingSourceObject: {fileID: 614533928663309697, guid: 275459a0172817f4eb51f12d1b017b57, type: 3}
@@ -262,12 +267,33 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5937227495557089178, guid: 758c1d2e6b37437449522b50f5280ad2, type: 3}
   m_PrefabInstance: {fileID: 366441245569724296}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 292029911}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3a49a0831587e6947bef18d0dcdb94ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ParallaxCamera
+--- !u!114 &519420035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292029911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f5e1e173b12fa74a84b5dbfc9753cf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CamaraFollow
+  target: {fileID: 1957697323}
+  smoothSpeed: 0.125
+  offset: {x: 0, y: 0}
+  followX: 1
+  followY: 0
+  minX: 0
+  maxX: 50.2
+  minY: 0
+  maxY: 0
 --- !u!1 &551762313
 GameObject:
   m_ObjectHideFlags: 0
@@ -1187,10 +1213,15 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1957697323}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8434054552724309609, guid: 758c1d2e6b37437449522b50f5280ad2, type: 3}
+    - {fileID: 1281221673313545840, guid: 758c1d2e6b37437449522b50f5280ad2, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8259640040495054104, guid: 758c1d2e6b37437449522b50f5280ad2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 519420035}
   m_SourcePrefab: {fileID: 100100000, guid: 758c1d2e6b37437449522b50f5280ad2, type: 3}
 --- !u!1001 &1873607813877300294
 PrefabInstance:
@@ -1544,6 +1575,46 @@ PrefabInstance:
     - target: {fileID: 2916103821610227462, guid: 95edcc14b0d25ba4b855eec650f5cbf8, type: 3}
       propertyPath: m_Name
       value: level bosque
+      objectReference: {fileID: 0}
+    - target: {fileID: 3141592680259244242, guid: 95edcc14b0d25ba4b855eec650f5cbf8, type: 3}
+      propertyPath: useY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3141592680259244242, guid: 95edcc14b0d25ba4b855eec650f5cbf8, type: 3}
+      propertyPath: parallaxFactorX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3468881580717939091, guid: 95edcc14b0d25ba4b855eec650f5cbf8, type: 3}
+      propertyPath: useY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3468881580717939091, guid: 95edcc14b0d25ba4b855eec650f5cbf8, type: 3}
+      propertyPath: parallaxFactorX
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3802355071562648410, guid: 95edcc14b0d25ba4b855eec650f5cbf8, type: 3}
+      propertyPath: useY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3802355071562648410, guid: 95edcc14b0d25ba4b855eec650f5cbf8, type: 3}
+      propertyPath: parallaxFactorX
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4412358329524661539, guid: 95edcc14b0d25ba4b855eec650f5cbf8, type: 3}
+      propertyPath: useY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4412358329524661539, guid: 95edcc14b0d25ba4b855eec650f5cbf8, type: 3}
+      propertyPath: parallaxFactorX
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145326424855654326, guid: 95edcc14b0d25ba4b855eec650f5cbf8, type: 3}
+      propertyPath: useY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145326424855654326, guid: 95edcc14b0d25ba4b855eec650f5cbf8, type: 3}
+      propertyPath: parallaxFactorX
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 5772582996179905540, guid: 95edcc14b0d25ba4b855eec650f5cbf8, type: 3}
       propertyPath: parallaxCamera

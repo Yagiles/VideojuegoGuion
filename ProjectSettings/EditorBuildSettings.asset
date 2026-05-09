@@ -27,7 +27,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Escena 5(Bosque Inicio).unity
     guid: ef4fc4833b7ceef4cb2ee97088445f42
   - enabled: 0
-    path: Assets/Scenes/Escena (Bosque Boda).unity
+    path: Assets/Scenes/Escena 4(Bosque ).unity
     guid: b9f419038b9fab44f803841270c1b35f
   - enabled: 1
     path: Assets/Scenes/Escena 6(Pantano).unity

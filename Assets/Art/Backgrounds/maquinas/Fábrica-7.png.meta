@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: 67ff7b355f7bce745b3760fad9f34b07
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6244021310491953797
+    second: "Fa\u0301brica-7_0"
+  - first:
+      213: 3145006043359624330
+    second: "Fa\u0301brica-7_1"
+  - first:
+      213: -8884491878609396488
+    second: "Fa\u0301brica-7_2"
+  - first:
+      213: -3301185991948987050
+    second: "Fa\u0301brica-7_3"
+  - first:
+      213: 228413627471676230
+    second: "Fa\u0301brica-7_4"
+  - first:
+      213: -8140925752189808406
+    second: "Fa\u0301brica-7_5"
+  - first:
+      213: 8045932719218508201
+    second: "Fa\u0301brica-7_6"
+  - first:
+      213: -1879047374833984585
+    second: "Fa\u0301brica-7_7"
+  - first:
+      213: 3809253377807912170
+    second: "Fa\u0301brica-7_8"
+  - first:
+      213: 7265734171456536360
+    second: "Fa\u0301brica-7_9"
+  - first:
+      213: -7653624865349207102
+    second: "Fa\u0301brica-7_10"
+  - first:
+      213: -4765643996628433662
+    second: "Fa\u0301brica-7_11"
+  - first:
+      213: 2259551221013614747
+    second: "Fa\u0301brica-7_12"
+  - first:
+      213: -1564615130720618453
+    second: "Fa\u0301brica-7_13"
+  - first:
+      213: 81815677289845174
+    second: "Fa\u0301brica-7_14"
+  - first:
+      213: -1565714907609064743
+    second: "Fa\u0301brica-7_15"
+  - first:
+      213: -6592916906436108434
+    second: "Fa\u0301brica-7_16"
+  - first:
+      213: -2981296151284961884
+    second: "Fa\u0301brica-7_17"
+  - first:
+      213: 3292470458384950342
+    second: "Fa\u0301brica-7_18"
+  - first:
+      213: 2996343441634529940
+    second: "Fa\u0301brica-7_19"
+  - first:
+      213: -5420781855520720374
+    second: "Fa\u0301brica-7_20"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Fa\u0301brica-7_0"
+      rect:
+        serializedVersion: 2
+        x: 1881
+        y: 2647
+        width: 140
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58a87d5bc4837a650800000000000000
+      internalID: 6244021310491953797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Fa\u0301brica-7_1"
+      rect:
+        serializedVersion: 2
+        x: 1789
+        y: 2438
+        width: 344
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8c38ee555e45ab20800000000000000
+      internalID: 3145006043359624330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Fa\u0301brica-7_2"
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 1490
+        width: 173
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fcd4ad55b1f3b480800000000000000
+      internalID: -8884491878609396488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Fa\u0301brica-7_3"
+      rect:
+        serializedVersion: 2
+        x: 1974
+        y: 1372
+        width: 91
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 655926ca4d4df22d0800000000000000
+      internalID: -3301185991948987050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Fa\u0301brica-7_4"
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 1318
+        width: 108
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 643ce47ebfc7b2300800000000000000
+      internalID: 228413627471676230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Fa\u0301brica-7_5"
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 1046
+        width: 187
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae095ed292f950f80800000000000000
+      internalID: -8140925752189808406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Fa\u0301brica-7_6"
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 1188
+        width: 105
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a146bfcd25e8af60800000000000000
+      internalID: 8045932719218508201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Fa\u0301brica-7_7"
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 894
+        width: 102
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bbd3e24e584ce5e0800000000000000
+      internalID: -1879047374833984585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Fa\u0301brica-7_8"
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 853
+        width: 87
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aec82bbc3cf2dd430800000000000000
+      internalID: 3809253377807912170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Fa\u0301brica-7_9"
+      rect:
+        serializedVersion: 2
+        x: 1237
+        y: 899
+        width: 74
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82f7512cbb215d460800000000000000
+      internalID: 7265734171456536360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Fa\u0301brica-7_10"
+      rect:
+        serializedVersion: 2
+        x: 1954
+        y: 875
+        width: 78
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cb73c05cbcd8c590800000000000000
+      internalID: -7653624865349207102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Fa\u0301brica-7_11"
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 721
+        width: 448
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2054df6d8080dddb0800000000000000
+      internalID: -4765643996628433662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Fa\u0301brica-7_12"
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 855
+        width: 65
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9011582dd98b5f10800000000000000
+      internalID: 2259551221013614747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Fa\u0301brica-7_13"
+      rect:
+        serializedVersion: 2
+        x: 1925
+        y: 615
+        width: 123
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b28323b04de594ae0800000000000000
+      internalID: -1564615130720618453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Fa\u0301brica-7_14"
+      rect:
+        serializedVersion: 2
+        x: 1518
+        y: 711
+        width: 207
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b15bedcceaa22100800000000000000
+      internalID: 81815677289845174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Fa\u0301brica-7_15"
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 492
+        width: 53
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9da9d684696754ae0800000000000000
+      internalID: -1565714907609064743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Fa\u0301brica-7_16"
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 328
+        width: 47
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6f553e11014184a0800000000000000
+      internalID: -6592916906436108434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Fa\u0301brica-7_17"
+      rect:
+        serializedVersion: 2
+        x: 1531
+        y: 495
+        width: 188
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4adab6c22fe40a6d0800000000000000
+      internalID: -2981296151284961884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Fa\u0301brica-7_18"
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 399
+        width: 282
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 644a089007431bd20800000000000000
+      internalID: 3292470458384950342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Fa\u0301brica-7_19"
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 388
+        width: 92
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49292bf1c76259920800000000000000
+      internalID: 2996343441634529940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Fa\u0301brica-7_20"
+      rect:
+        serializedVersion: 2
+        x: 1841
+        y: 363
+        width: 142
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0afdc87f9385c4b0800000000000000
+      internalID: -5420781855520720374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "Fa\u0301brica-7_0": 6244021310491953797
+      "Fa\u0301brica-7_1": 3145006043359624330
+      "Fa\u0301brica-7_10": -7653624865349207102
+      "Fa\u0301brica-7_11": -4765643996628433662
+      "Fa\u0301brica-7_12": 2259551221013614747
+      "Fa\u0301brica-7_13": -1564615130720618453
+      "Fa\u0301brica-7_14": 81815677289845174
+      "Fa\u0301brica-7_15": -1565714907609064743
+      "Fa\u0301brica-7_16": -6592916906436108434
+      "Fa\u0301brica-7_17": -2981296151284961884
+      "Fa\u0301brica-7_18": 3292470458384950342
+      "Fa\u0301brica-7_19": 2996343441634529940
+      "Fa\u0301brica-7_2": -8884491878609396488
+      "Fa\u0301brica-7_20": -5420781855520720374
+      "Fa\u0301brica-7_3": -3301185991948987050
+      "Fa\u0301brica-7_4": 228413627471676230
+      "Fa\u0301brica-7_5": -8140925752189808406
+      "Fa\u0301brica-7_6": 8045932719218508201
+      "Fa\u0301brica-7_7": -1879047374833984585
+      "Fa\u0301brica-7_8": 3809253377807912170
+      "Fa\u0301brica-7_9": 7265734171456536360
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
