@@ -9,7 +9,10 @@ EditorBuildSettings:
     path: "Assets/Scenes/Men\xFAInicio.unity"
     guid: 182a563595478d2479eaf80d08207564
   - enabled: 1
-    path: Assets/Scenes/Escena 1.unity
+    path: Assets/Scenes/Escena 0(Puerta).unity
+    guid: f0d509cbaf77d964c9a2ece505216e73
+  - enabled: 1
+    path: Assets/Scenes/Escena 1(Bosque).unity
     guid: bec3dddf200c70c4b8f4a259d7656465
   - enabled: 1
     path: Assets/Scenes/Escena 2(Boda).unity
@@ -18,20 +21,35 @@ EditorBuildSettings:
     path: Assets/Scenes/Escena 3(Sala del trono).unity
     guid: 38ceb1c4a295b784abc4ec905d310ba8
   - enabled: 1
-    path: Assets/Scenes/Escena 4(Bosque ).unity
+    path: Assets/Scenes/Escena 4(Bosque boda).unity
+    guid: 7420db7991a96ae4c833335b24891b4f
+  - enabled: 1
+    path: Assets/Scenes/Escena 5(Bosque Inicio).unity
+    guid: ef4fc4833b7ceef4cb2ee97088445f42
+  - enabled: 0
+    path: Assets/Scenes/Escena (Bosque Boda).unity
     guid: b9f419038b9fab44f803841270c1b35f
   - enabled: 1
-    path: Assets/Scenes/Escena 5(Pantano).unity
+    path: Assets/Scenes/Escena 6(Pantano).unity
     guid: 7c404eced54bc9e4b8fe26100413f3e8
   - enabled: 1
-    path: Assets/Scenes/Escena 6(Mercado).unity
+    path: Assets/Scenes/Escena 7(Mercado).unity
     guid: 91c29f5c6e698bb429eebca025b91290
   - enabled: 1
-    path: Assets/Scenes/Escena 7(Cueva mercado).unity
+    path: Assets/Scenes/Escena 8 (Cueva mercado).unity
     guid: a8c7a11a511b9aa4293ed8058fc28165
   - enabled: 1
-    path: "Assets/Scenes/Escena 8(Bosque ni\xF1a).unity"
+    path: "Assets/Scenes/Escena 9(Bosque ni\xF1a).unity"
     guid: dcba2f388a517c24fa6859dd93819fc4
+  - enabled: 1
+    path: Assets/Scenes/Escena 10(Sala del trono-confrontacion).unity
+    guid: 7f1c55287500ed5489b09f2811a7252c
+  - enabled: 1
+    path: "Assets/Scenes/Escena 11(Sala de m\xE1quinas).unity"
+    guid: 4898271cedf46604292c773a82faef7c
+  - enabled: 1
+    path: Assets/Scenes/Escena 12(Final).unity
+    guid: 19c2505dc6c95c844add520a01d7f560
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
