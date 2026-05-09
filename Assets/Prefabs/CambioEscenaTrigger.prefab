@@ -92,5 +92,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CambioEscena
   nombreSiguienteEscena: Escena 2(Boda)
+  nombreSpawnDestino: SpawnFinal
   pantallaNegra: {fileID: 0}
   duracionFundido: 1

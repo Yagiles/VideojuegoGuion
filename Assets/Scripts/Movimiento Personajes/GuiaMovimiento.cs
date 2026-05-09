@@ -11,6 +11,9 @@ public class GuiaMovimiento : MonoBehaviour
     public float distanciaDelante = 6f;
     public float margenParada = 0.1f;
 
+    [Header("Modo recorrido")]
+    public bool modoVuelta = false;
+
     [Header("Direccion del camino")]
     public int direccionObjetivo = 1; // 1 derecha, -1 izquierda
 
@@ -43,11 +46,21 @@ public class GuiaMovimiento : MonoBehaviour
         {
             Debug.LogError("No se encontro ningun objeto con tag Player");
         }
+
+        modoVuelta = DatosCambioEscena.modoVuelta;
     }
 
     void FixedUpdate()
     {
-        IrEnDireccionObjetivo();
+        if (modoVuelta)
+        {
+            SeguirPorDetras();
+        }
+        else
+        {
+            IrEnDireccionObjetivo();
+        }
+
         AjustarAlturaSobreSuelo();
     }
 
@@ -82,17 +95,48 @@ public class GuiaMovimiento : MonoBehaviour
         }
     }
 
+    void SeguirPorDetras()
+    {
+        if (jugador == null || rbJugador == null) return;
+
+        float velocidadJugadorX = rbJugador.linearVelocity.x;
+
+        if (Mathf.Abs(velocidadJugadorX) < 0.1f)
+        {
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+            return;
+        }
+
+        float direccionJugador = Mathf.Sign(velocidadJugadorX);
+
+        float posicionObjetivoX = jugador.position.x - (direccionJugador * distanciaDelante);
+        float diferenciaX = posicionObjetivoX - transform.position.x;
+
+        if (Mathf.Abs(diferenciaX) < margenParada)
+        {
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+        }
+        else
+        {
+            float direccionMovimiento = Mathf.Sign(diferenciaX);
+            rb.linearVelocity = new Vector2(direccionMovimiento * velocidad, rb.linearVelocity.y);
+        }
+    }
+
     void AjustarAlturaSobreSuelo()
     {
+        if (jugador == null) return;
+
         float sueloY = BuscarSueloMasAlto();
 
         if (sueloY == Mathf.NegativeInfinity)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
             return;
-
+        }
         float flotacion = Mathf.Sin(Time.time * velocidadFlotacion) * alturaFlotacion;
         float objetivoY = sueloY + alturaSobreSuelo + flotacion;
 
-        // Limite para que el guia no se vaya demasiado arriba
         float alturaMaxima = jugador.position.y + alturaMaximaSobreJugador;
         objetivoY = Mathf.Min(objetivoY, alturaMaxima);
 
