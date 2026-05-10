@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 using TMPro;
 
@@ -17,6 +17,11 @@ public class DialogoManager : MonoBehaviour
 
     public System.Action alTerminarDialogo;
 
+    // maquina escribir 
+    private bool escribiendo = false;
+    public float velocidadEscritura = 0.03f;
+    private Coroutine coroutineEscritura;
+
     void Start()
     {
         panelDialogo.SetActive(false);
@@ -29,9 +34,24 @@ public class DialogoManager : MonoBehaviour
 
     void Update()
     {
+        /*
         if (dialogoActivo && puedeAvanzar && Input.GetKeyDown(KeyCode.E))
         {
             SiguienteLinea();
+        }*/
+
+        if (dialogoActivo && Input.GetKeyDown(KeyCode.E))
+        {
+            // Si está escribiendo -> completar texto
+            if (escribiendo)
+            {
+                CompletarTexto();
+            }
+            // Si ya terminó -> siguiente línea
+            else if (puedeAvanzar)
+            {
+                SiguienteLinea();
+            }
         }
     }
 
@@ -46,18 +66,31 @@ public class DialogoManager : MonoBehaviour
         MostrarLinea();
 
         if (textoContinuar != null)
-        {
+        { 
             textoContinuar.gameObject.SetActive(true);
             textoContinuar.text = "Pulsa E para avanzar";
         }
 
-        StartCoroutine(ActivarAvance());
+        // StartCoroutine(ActivarAvance());
     }
 
     void MostrarLinea()
     {
+        /*
         textoNombre.text = dialogoActual.lineas[indiceLinea].nombrePersonaje;
         textoDialogo.text = dialogoActual.lineas[indiceLinea].texto;
+        */
+        puedeAvanzar = false;
+
+        textoNombre.text =
+            dialogoActual.lineas[indiceLinea].nombrePersonaje;
+
+        if (coroutineEscritura != null)
+        {
+            StopCoroutine(coroutineEscritura);
+        }
+
+        coroutineEscritura = StartCoroutine(EscribirTexto(dialogoActual.lineas[indiceLinea].texto));
     }
 
     void SiguienteLinea()
@@ -90,10 +123,41 @@ public class DialogoManager : MonoBehaviour
         alTerminarDialogo?.Invoke();
         alTerminarDialogo = null;
     }
-
+    /*
     private IEnumerator ActivarAvance()
     {
         yield return null;
+        puedeAvanzar = true;
+    }*/
+
+    //añadido nuevo
+    IEnumerator EscribirTexto(string texto)
+    {
+        escribiendo = true;
+
+        textoDialogo.text = "";
+
+        foreach (char letra in texto)
+        {
+            textoDialogo.text += letra;
+
+            yield return new WaitForSeconds(velocidadEscritura);
+        }
+
+        escribiendo = false;
+        puedeAvanzar = true;
+    }
+    void CompletarTexto()
+    {
+        if (coroutineEscritura != null)
+        {
+            StopCoroutine(coroutineEscritura);
+        }
+
+        textoDialogo.text =
+            dialogoActual.lineas[indiceLinea].texto;
+
+        escribiendo = false;
         puedeAvanzar = true;
     }
 }

@@ -1418,12 +1418,28 @@ PrefabInstance:
       value: 261.394
       objectReference: {fileID: 0}
     - target: {fileID: 5862520522937232917, guid: 8fa7b1c6936012c42b65c87fa4581149, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 5862520522937232917, guid: 8fa7b1c6936012c42b65c87fa4581149, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 5862520522937232917, guid: 8fa7b1c6936012c42b65c87fa4581149, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 5862520522937232917, guid: 8fa7b1c6936012c42b65c87fa4581149, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -413.9732
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5862520522937232917, guid: 8fa7b1c6936012c42b65c87fa4581149, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -259.2
+      value: -176
+      objectReference: {fileID: 0}
+    - target: {fileID: 5862520522937232917, guid: 8fa7b1c6936012c42b65c87fa4581149, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6355052802726140185, guid: 8fa7b1c6936012c42b65c87fa4581149, type: 3}
       propertyPath: m_Name
