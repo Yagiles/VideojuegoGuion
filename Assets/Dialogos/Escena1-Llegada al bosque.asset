@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e28186e85056be5458f4bb9cfbfbff22, type: 3}
+  m_Name: Escena1-Llegada al bosque
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoData
+  lineas:
+  - nombrePersonaje: Guia
+    texto: "\xBFHola? \xBFHooolaa?\r\n"
+  - nombrePersonaje: Guia
+    texto: "\xA1Vamos, despierta ya!"
+  - nombrePersonaje: "T\xFA"
+    texto: "Ahh\u2026 \xBFD\xF3nde\u2026estoy?"
+  - nombrePersonaje: Guia
+    texto: "\xA1Por fin despiertas, amigo m\xEDo! \xA1Menos mal!"
+  - nombrePersonaje: Guia
+    texto: "\xA1Venga, r\xE1pido! \xA1Que llegamos tarde!"
+  - nombrePersonaje: "T\xFA"
+    texto: "\xBFEh? \xBFQui\xE9n eres-"
+  - nombrePersonaje: Guia
+    texto: "\xA1Tenemos que irnos ya! No querr\xE1s llegar tarde a un evento tan
+      especial, \xBFverdad? "
+  - nombrePersonaje: "T\xFA"
+    texto: "\xA1Espera! \xA1Primero dime d\xF3nde estoy!"
