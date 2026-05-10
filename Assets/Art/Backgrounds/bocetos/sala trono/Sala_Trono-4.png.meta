@@ -1,0 +1,403 @@
+fileFormatVersion: 2
+guid: 9d52c524c1abb484e94a73314756b909
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6345165486687697432
+    second: Sala_Trono-4_0
+  - first:
+      213: -3900947466657691358
+    second: Sala_Trono-4_1
+  - first:
+      213: 2049178872658308765
+    second: Sala_Trono-4_2
+  - first:
+      213: 761124264767072934
+    second: Sala_Trono-4_3
+  - first:
+      213: 3261183313300799110
+    second: Sala_Trono-4_4
+  - first:
+      213: -7007182345567850478
+    second: Sala_Trono-4_5
+  - first:
+      213: 3360827994487234383
+    second: Sala_Trono-4_6
+  - first:
+      213: -4581290860224557151
+    second: Sala_Trono-4_7
+  - first:
+      213: -2567042765024691936
+    second: Sala_Trono-4_8
+  - first:
+      213: -8706746958889396205
+    second: Sala_Trono-4_9
+  - first:
+      213: -6580831786071449669
+    second: Sala_Trono-4_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sala_Trono-4_0
+      rect:
+        serializedVersion: 2
+        x: 2251
+        y: 417
+        width: 218
+        height: 334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81ab61b546e8e0850800000000000000
+      internalID: 6345165486687697432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sala_Trono-4_1
+      rect:
+        serializedVersion: 2
+        x: 3355
+        y: 417
+        width: 218
+        height: 334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 229886a72fc0dd9c0800000000000000
+      internalID: -3900947466657691358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sala_Trono-4_2
+      rect:
+        serializedVersion: 2
+        x: 4980
+        y: 376
+        width: 148
+        height: 323
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9ea802e355207c10800000000000000
+      internalID: 2049178872658308765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sala_Trono-4_3
+      rect:
+        serializedVersion: 2
+        x: 6623
+        y: 668
+        width: 133
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aa2f577c7e009a00800000000000000
+      internalID: 761124264767072934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sala_Trono-4_4
+      rect:
+        serializedVersion: 2
+        x: 7577
+        y: 651
+        width: 103
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68eb9b8e1fc024d20800000000000000
+      internalID: 3261183313300799110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sala_Trono-4_5
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 234
+        width: 192
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2103a0848cc71ce90800000000000000
+      internalID: -7007182345567850478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sala_Trono-4_6
+      rect:
+        serializedVersion: 2
+        x: 1729
+        y: 217
+        width: 192
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4f999a214f04ae20800000000000000
+      internalID: 3360827994487234383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sala_Trono-4_7
+      rect:
+        serializedVersion: 2
+        x: 3896
+        y: 254
+        width: 192
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1af429f3c3cfb60c0800000000000000
+      internalID: -4581290860224557151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sala_Trono-4_8
+      rect:
+        serializedVersion: 2
+        x: 5447
+        y: 238
+        width: 192
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 029777bb438006cd0800000000000000
+      internalID: -2567042765024691936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sala_Trono-4_9
+      rect:
+        serializedVersion: 2
+        x: 6661
+        y: 439
+        width: 79
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3185f2e65cb6b2780800000000000000
+      internalID: -8706746958889396205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sala_Trono-4_10
+      rect:
+        serializedVersion: 2
+        x: 7615
+        y: 422
+        width: 65
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbf9c987b503ca4a0800000000000000
+      internalID: -6580831786071449669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Sala_Trono-4_0: 6345165486687697432
+      Sala_Trono-4_1: -3900947466657691358
+      Sala_Trono-4_10: -6580831786071449669
+      Sala_Trono-4_2: 2049178872658308765
+      Sala_Trono-4_3: 761124264767072934
+      Sala_Trono-4_4: 3261183313300799110
+      Sala_Trono-4_5: -7007182345567850478
+      Sala_Trono-4_6: 3360827994487234383
+      Sala_Trono-4_7: -4581290860224557151
+      Sala_Trono-4_8: -2567042765024691936
+      Sala_Trono-4_9: -8706746958889396205
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
