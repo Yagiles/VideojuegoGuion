@@ -7,6 +7,7 @@ public class DialogoManager : MonoBehaviour
     public GameObject panelDialogo;
     public TMP_Text textoNombre;
     public TMP_Text textoDialogo;
+    public TMP_Text textoContinuar;
 
     private DialogoData dialogoActual;
     private int indiceLinea = 0;
@@ -14,9 +15,16 @@ public class DialogoManager : MonoBehaviour
     public bool dialogoActivo = false;
     private bool puedeAvanzar = false;
 
+    public System.Action alTerminarDialogo;
+
     void Start()
     {
         panelDialogo.SetActive(false);
+
+        if (textoContinuar != null)
+        {
+            textoContinuar.gameObject.SetActive(false);
+        }
     }
 
     void Update()
@@ -36,6 +44,12 @@ public class DialogoManager : MonoBehaviour
 
         panelDialogo.SetActive(true);
         MostrarLinea();
+
+        if (textoContinuar != null)
+        {
+            textoContinuar.gameObject.SetActive(true);
+            textoContinuar.text = "Pulsa E para avanzar";
+        }
 
         StartCoroutine(ActivarAvance());
     }
@@ -63,9 +77,18 @@ public class DialogoManager : MonoBehaviour
     void TerminarDialogo()
     {
         panelDialogo.SetActive(false);
+
+        if (textoContinuar != null)
+        {
+            textoContinuar.gameObject.SetActive(false);
+        }
+
         dialogoActual = null;
         dialogoActivo = false;
         puedeAvanzar = false;
+
+        alTerminarDialogo?.Invoke();
+        alTerminarDialogo = null;
     }
 
     private IEnumerator ActivarAvance()
