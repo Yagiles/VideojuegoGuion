@@ -133,8 +133,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GuiaMovimiento
   velocidad: 10
-  distanciaDelante: 4
+  distanciaDelante: 2
   margenParada: 0.1
+  modoVuelta: 0
   direccionObjetivo: 1
   alturaSobreSuelo: 1.5
   alturaFlotacion: 1
