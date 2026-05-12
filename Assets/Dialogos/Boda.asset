@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e28186e85056be5458f4bb9cfbfbff22, type: 3}
+  m_Name: Boda
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoData
+  lineas:
+  - nombrePersonaje: Guia
+    texto: "\xA1Uff! \xA1Por los pelos!\r\n"
+  - nombrePersonaje: "T\xFA"
+    texto: "\xBFUna boda?\r\nOye, \xBFde qu\xE9 va todo e-\r\n\r\n"
+  - nombrePersonaje: "Gu\xEDa"
+    texto: "\xA1Shhhhhhh! \xA1Calla, que viene la mejor parte!\r\n"
+  - nombrePersonaje: Rey
+    texto: " Y usted, se\xF1or Ping\xFCino, promete amarla y respetarla, en la salud
+      y en la felicidad- \r\n"
+  - nombrePersonaje: "T\xFA"
+    texto: "\xBFNo era en la enfermedad? \r\n"
+  - nombrePersonaje: "Gu\xEDa"
+    texto: "Shhhh\r\n \r\n"
+  - nombrePersonaje: Rey
+    texto: 'Por el resto de la eternidad
+
+'
+  - nombrePersonaje: "Ping\xFCino"
+    texto: "S\xED, lo prometo."
+  - nombrePersonaje: Rey
+    texto: "Y usted, se\xF1ora Cacat\xFAa, \xBFpromete amarlo en lo bueno y en lo
+      mejor?  "
+  - nombrePersonaje: "T\xFA"
+    texto: "<i>\xBFQu\xE9 clase de votos son estos?</i>"
+  - nombrePersonaje: "Cacat\xFAa"
+    texto: "S\xED, lo prometo."
+  - nombrePersonaje: Rey
+    texto: Entonces, por el poder que me ha otorgado el bosque y la corona...
+  - nombrePersonaje: Rey
+    texto: "Yo os declaro marido y mujer. \xA1Puede besar al ave!"
+  - nombrePersonaje: Guia
+    texto: "\xA1Bravo! \xA1Que vivan los novios!\r\n"
+  avanceAutomatico: 0
+  duracionLinea: 2

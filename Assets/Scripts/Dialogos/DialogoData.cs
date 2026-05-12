@@ -13,4 +13,8 @@ public class LineaDialogo
 public class DialogoData : ScriptableObject
 {
     public LineaDialogo[] lineas;
+
+    [Header("Dialogo automatico")]
+    public bool avanceAutomatico = false;
+    public float duracionLinea = 2f;
 }

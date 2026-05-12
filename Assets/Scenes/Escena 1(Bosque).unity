@@ -252,6 +252,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 25045251}
   m_CullTransparentMesh: 1
+--- !u!1 &156022704
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 156022706}
+  - component: {fileID: 156022705}
+  m_Layer: 0
+  m_Name: DialogoJugadorParado
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &156022705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156022704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fda63a4195a7d724b9524f7ca426ba3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoJugadorParado
+  dialogoParado1: {fileID: 11400000, guid: 7d6686bd691b1c645a327ef4531d24e6, type: 2}
+  dialogoParado2: {fileID: 11400000, guid: 5d18e75426f8b3a47a1e29d28d5ce74d, type: 2}
+  dialogoManager: {fileID: 831191234}
+  rbJugador: {fileID: 1957697325}
+  tiempoParadoNecesario: 3
+  velocidadMinima: 0.1
+--- !u!4 &156022706
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156022704}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.40273, y: -0.76675, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &292029911 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8259640040495054104, guid: 758c1d2e6b37437449522b50f5280ad2, type: 3}
@@ -1184,6 +1234,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b63a7e930ae874a4cb4cefd76a28109e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovimientoJugador2D
+--- !u!50 &1957697325 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 904010880441300237, guid: c4e68331aa2f226448b19f532e5953e4, type: 3}
+  m_PrefabInstance: {fileID: 4831571290246287982}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2092295370 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4954084995044657084, guid: 8e192ec83fbc8d147abb9e3024e5f374, type: 3}
@@ -1208,6 +1263,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogoTrigger
   dialogo: {fileID: 11400000, guid: d92bec85d0589d64b95aac72f08dddb7, type: 2}
+  dialogoEspecial: {fileID: 0}
+  requiereObjeto: 0
+  objetoRequerido: {fileID: 0}
+  objetoAActivar: {fileID: 0}
   dialogoManager: {fileID: 831191234}
 --- !u!1001 &366441245569724296
 PrefabInstance:
@@ -2015,3 +2074,4 @@ SceneRoots:
   - {fileID: 4239733891919195887}
   - {fileID: 6985765056011938147}
   - {fileID: 5556968122309015831}
+  - {fileID: 156022706}
