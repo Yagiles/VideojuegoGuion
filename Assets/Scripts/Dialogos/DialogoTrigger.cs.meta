@@ -1,2 +1,15 @@
 fileFormatVersion: 2
 guid: 0f0d4da3e65ab6f49a7553693f3184e2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - dialogo: {instanceID: 0}
+  - dialogoEspecial: {instanceID: 0}
+  - objetoAActivar: {instanceID: 0}
+  - dialogoManager: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
