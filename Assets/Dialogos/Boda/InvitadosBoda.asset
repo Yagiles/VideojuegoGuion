@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e28186e85056be5458f4bb9cfbfbff22, type: 3}
+  m_Name: InvitadosBoda
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoData
+  lineas:
+  - nombrePersonaje: Pez
+    texto: "Ay, \xA1hola! \xA1Cu\xE1nto tiempo!"
+  - nombrePersonaje: Pez
+    texto: Me alegro que hayas venido.
+  - nombrePersonaje: Pez
+    texto: "Llevabas tanto tiempo desaparecido que no sab\xEDa si lo har\xEDas."
+  - nombrePersonaje: "T\xFA"
+    texto: Disculpe, pero...
+  - nombrePersonaje: "Ni\xF1a"
+    texto: <i>Sniff<i>...
+  - nombrePersonaje: "Ni\xF1a"
+    texto: "Crecen tan r\xE1pido."
+  - nombrePersonaje: "Ni\xF1a"
+    texto: "Hacen tan buena pareja, \xBFno lo crees?."
+  - nombrePersonaje: "T\xFA"
+    texto: Emm...
+  - nombrePersonaje: "T\xFA"
+    texto: "S\xED, supongo..."
+  - nombrePersonaje: "T\xFA"
+    texto: "\xBFMe podr\xEDa explicar alguno qu\xE9 es este sitio?"
+  - nombrePersonaje: Pez
+    texto: <i>Mira hacia los lados, confuso<i>
+  - nombrePersonaje: Pez
+    texto: "\xBFEl bosque?"
+  - nombrePersonaje: "T\xFA"
+    texto: "S\xED. El bosque y...vosotros."
+  - nombrePersonaje: "Ni\xF1a"
+    texto: "\xBFEsos son minihamburguesas? Me muero de hambre."
+  - nombrePersonaje: "Ni\xF1a"
+    texto: "\xA1No he comido nada en dos minutos! \xBFTe lo puedes creer?"
+  avanceAutomatico: 0
+  duracionLinea: 2

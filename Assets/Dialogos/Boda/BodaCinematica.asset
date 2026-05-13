@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e28186e85056be5458f4bb9cfbfbff22, type: 3}
-  m_Name: Boda
+  m_Name: BodaCinematica
   m_EditorClassIdentifier: Assembly-CSharp::DialogoData
   lineas:
   - nombrePersonaje: Guia
@@ -70,6 +70,6 @@ MonoBehaviour:
   - nombrePersonaje: "Gu\xEDa"
     texto: Lo siento, tengo que ir a saludar a los novios.
   - nombrePersonaje: "Gu\xEDa"
-    texto: "A lo mejor alguno de los asistentes sabe a qu\xE9 te refieres."
+    texto: "A lo mejor alguno de los invitados sabe a qu\xE9 te refieres."
   avanceAutomatico: 0
   duracionLinea: 2
