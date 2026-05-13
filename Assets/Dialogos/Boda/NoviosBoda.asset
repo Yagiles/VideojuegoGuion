@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e28186e85056be5458f4bb9cfbfbff22, type: 3}
+  m_Name: NoviosBoda
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoData
+  lineas:
+  - nombrePersonaje: "Pingu\xEFno"
+    texto: "Hombre, hola. \xA1Cu\xE1nto tiempo!"
+  - nombrePersonaje: "Pingu\xEFno"
+    texto: Nos alegramos mucho de que hayas podido venir hoy.
+  - nombrePersonaje: "Pingu\xEFno"
+    texto: Sabemos que has estado un poco liado.
+  - nombrePersonaje: "T\xFA"
+    texto: "Ah\u2026 eh, s\xED\u2026 felicidades."
+  - nombrePersonaje: "Cacat\xFAa"
+    texto: "Te estoy eternamente agradecida por presentarme a este apuesto ov\xEDparo. "
+  - nombrePersonaje: "Ping\xFCino"
+    texto: "Me vas a poner colorado pajarita m\xEDa."
+  - nombrePersonaje: "Ping\xFCino"
+    texto: <i>se besan<i>
+  - nombrePersonaje: "T\xFA"
+    texto: "<i>inc\xF3modo<i>"
+  - nombrePersonaje: "T\xFA"
+    texto: Oigan, creo que ha habido un malentendido.
+  - nombrePersonaje: "T\xFA"
+    texto: "Yo estaba en mi habitaci\xF3n y cuando abr\xED la puerta aparec\xED aqu\xED."
+  - nombrePersonaje: "T\xFA"
+    texto: "\xBFAlguien podr\xEDa decirme qu\xE9 est\xE1 pasando?"
+  - nombrePersonaje: "Cacat\xFAa"
+    texto: "Cari\xF1o, \xBFest\xE1s bien?"
+  - nombrePersonaje: "Cacat\xFAa"
+    texto: "No est\xE1s teniendo ning\xFAn sentido."
+  - nombrePersonaje: "Ping\xFCino"
+    texto: "\xBFTe ha picado alg\xFAn bicho?"
+  - nombrePersonaje: "Ping\xFCino"
+    texto: "Ultimamente las mariquitas voladoras est\xE1n muy agresivas."
+  - nombrePersonaje: "Ping\xFCino"
+    texto: "Deber\xEDas hablar con el Rey."
+  - nombrePersonaje: "Ping\xFCino"
+    texto: "Seguramente tendr\xE1 algo para trat\xE1rtelo"
+  - nombrePersonaje: "Ping\xFCino"
+    texto: Pero date prisa. Creo que se iba de vuelta al palacio.
+  avanceAutomatico: 0
+  duracionLinea: 2
