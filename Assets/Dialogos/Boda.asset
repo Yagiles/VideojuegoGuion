@@ -16,7 +16,9 @@ MonoBehaviour:
   - nombrePersonaje: Guia
     texto: "\xA1Uff! \xA1Por los pelos!\r\n"
   - nombrePersonaje: "T\xFA"
-    texto: "\xBFUna boda?\r\nOye, \xBFde qu\xE9 va todo e-\r\n\r\n"
+    texto: "\xBFUna boda?\r\n\r\n"
+  - nombrePersonaje: "T\xFA"
+    texto: "Oye, \xBFde qu\xE9 va todo e-"
   - nombrePersonaje: "Gu\xEDa"
     texto: "\xA1Shhhhhhh! \xA1Calla, que viene la mejor parte!\r\n"
   - nombrePersonaje: Rey
@@ -58,7 +60,7 @@ MonoBehaviour:
   - nombrePersonaje: "T\xFA"
     texto: '<i>(inspira)</i>
 
-      
+
 
 '
   - nombrePersonaje: "T\xFA"
