@@ -19,6 +19,14 @@ public class DialogoManager : MonoBehaviour
 
     private Coroutine coroutineAutoDialogo;
 
+    //efecto maquina escribir
+    [Header("Efecto escritura")]
+    public float velocidadEscritura = 0.03f;
+
+    private bool escribiendo = false;
+
+    private Coroutine coroutineEscritura;
+
     void Start()
     {
         panelDialogo.SetActive(false);
@@ -31,15 +39,19 @@ public class DialogoManager : MonoBehaviour
 
     void Update()
     {
-        if (
-            dialogoActivo &&
-            puedeAvanzar &&
-            dialogoActual != null &&
-            !dialogoActual.avanceAutomatico &&
-            Input.GetKeyDown(KeyCode.E)
-        )
+        
+        if (dialogoActivo && dialogoActual != null && !dialogoActual.avanceAutomatico && Input.GetKeyDown(KeyCode.E) )
         {
-            SiguienteLinea();
+            // Si está escribiendo → completar texto
+            if (escribiendo)
+            {
+                CompletarTexto();
+            }
+            // Si ya terminó → avanzar
+            else if (puedeAvanzar)
+            {
+                SiguienteLinea();
+            }
         }
     }
 
@@ -83,8 +95,26 @@ public class DialogoManager : MonoBehaviour
 
     void MostrarLinea()
     {
+        /*
         textoNombre.text = dialogoActual.lineas[indiceLinea].nombrePersonaje;
         textoDialogo.text = dialogoActual.lineas[indiceLinea].texto;
+        */
+        puedeAvanzar = false;
+
+        textoNombre.text =
+            dialogoActual.lineas[indiceLinea].nombrePersonaje;
+
+        if (coroutineEscritura != null)
+        {
+            StopCoroutine(coroutineEscritura);
+        }
+
+        coroutineEscritura =
+            StartCoroutine(
+                EscribirTexto(
+                    dialogoActual.lineas[indiceLinea].texto
+                )
+            );
     }
 
     void SiguienteLinea()
@@ -134,12 +164,50 @@ public class DialogoManager : MonoBehaviour
     {
         while (dialogoActivo)
         {
+            // yield return new WaitForSeconds(dialogoActual.duracionLinea);
+            while (escribiendo)
+            {
+                yield return null;
+            }
+
             yield return new WaitForSeconds(dialogoActual.duracionLinea);
+            // 
 
             if (dialogoActivo)
             {
                 SiguienteLinea();
             }
         }
+    }
+
+    //añadido 
+    IEnumerator EscribirTexto(string texto)
+    {
+        escribiendo = true;
+
+        textoDialogo.text = "";
+
+        foreach (char letra in texto)
+        {
+            textoDialogo.text += letra;
+
+            yield return new WaitForSeconds(velocidadEscritura);
+        }
+
+        escribiendo = false;
+        puedeAvanzar = true;
+    }
+    void CompletarTexto()
+    {
+        if (coroutineEscritura != null)
+        {
+            StopCoroutine(coroutineEscritura);
+        }
+
+        textoDialogo.text =
+            dialogoActual.lineas[indiceLinea].texto;
+
+        escribiendo = false;
+        puedeAvanzar = true;
     }
 }
