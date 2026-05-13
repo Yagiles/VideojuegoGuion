@@ -187,11 +187,30 @@ public class DialogoManager : MonoBehaviour
 
         textoDialogo.text = "";
 
+        bool dentroEtiqueta = false;
+
         foreach (char letra in texto)
         {
+            // Detectar inicio etiqueta TMP
+            if (letra == '<')
+            {
+                dentroEtiqueta = true;
+            }
+
             textoDialogo.text += letra;
 
-            yield return new WaitForSeconds(velocidadEscritura);
+            // Detectar final etiqueta TMP
+            if (letra == '>')
+            {
+                dentroEtiqueta = false;
+                continue;
+            }
+
+            // Solo esperar si NO estamos en etiqueta
+            if (!dentroEtiqueta)
+            {
+                yield return new WaitForSeconds(velocidadEscritura);
+            }
         }
 
         escribiendo = false;
