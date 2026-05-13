@@ -45,5 +45,29 @@ MonoBehaviour:
     texto: "Yo os declaro marido y mujer. \xA1Puede besar al ave!"
   - nombrePersonaje: Guia
     texto: "\xA1Bravo! \xA1Que vivan los novios!\r\n"
+  - nombrePersonaje: "T\xFA"
+    texto: 'Bueno, ahora que ha acabado la boda.
+
+'
+  - nombrePersonaje: "T\xFA"
+    texto: "\xBFPodr\xEDas decirme qu\xE9 est\xE1 pasando?\r\n"
+  - nombrePersonaje: "Gu\xEDa"
+    texto: "\xBFA qu\xE9 te refieres?\r\n"
+  - nombrePersonaje: "T\xFA"
+    texto: "\xA1\xBFC\xF3mo que a qu\xE9 me refiero?!\r\n\r\n"
+  - nombrePersonaje: "T\xFA"
+    texto: '<i>(inspira)</i>
+
+      
+
+'
+  - nombrePersonaje: "T\xFA"
+    texto: "Mira, acabo de llegar a este sitio y no entiendo qu\xE9 est\xE1 pasando."
+  - nombrePersonaje: "T\xFA"
+    texto: "\xBFMe podr\xEDas explicar d\xF3nde estoy?"
+  - nombrePersonaje: "Gu\xEDa"
+    texto: Lo siento, tengo que ir a saludar a los novios.
+  - nombrePersonaje: "Gu\xEDa"
+    texto: "A lo mejor alguno de los asistentes sabe a qu\xE9 te refieres."
   avanceAutomatico: 0
   duracionLinea: 2
