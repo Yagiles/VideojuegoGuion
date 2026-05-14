@@ -18,8 +18,21 @@ public class NPCInteractuable : MonoBehaviour
 
     private bool jugadorCerca = false;
     private bool dialogoEnCurso = false;
+    private bool esperandoSoltarE = false;
+    public bool dialogoTerminado {get; private set; } = false;
+
     private void Update()
     {
+        if (esperandoSoltarE)
+        {
+            if (Input.GetKeyUp(KeyCode.E))
+            {
+                esperandoSoltarE = false;
+            }
+
+            return;
+        }
+
         if (jugadorCerca && !dialogoEnCurso && Input.GetKeyDown(KeyCode.E))
         {
             IntentarHablar();
@@ -68,6 +81,8 @@ public class NPCInteractuable : MonoBehaviour
         DesbloquearMovimientoJugador();
 
         dialogoEnCurso = false;
+        esperandoSoltarE = true;
+        dialogoTerminado = true;
     }
 
     void BloquearMovimientoJugador()
@@ -107,6 +122,7 @@ public class NPCInteractuable : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             jugadorCerca = false;
+            esperandoSoltarE = false;
         }
     }
 }

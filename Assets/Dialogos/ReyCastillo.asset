@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e28186e85056be5458f4bb9cfbfbff22, type: 3}
+  m_Name: ReyCastillo
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoData
+  lineas:
+  - nombrePersonaje: Rey
+    texto: "Que r\xE1pido has venido. \xBFDisfrutaste al final del banquete?\r\n"
+  - nombrePersonaje: "T\xFA"
+    texto: "La verdad que ten\xEDa prisa por hablar con usted, no he tenido tiempo
+      de probar la comida\r\n"
+  - nombrePersonaje: Rey
+    texto: "Una pena, serv\xEDan grandes manjares\u2026"
+  - nombrePersonaje: "T\xFA"
+    texto: "\xBFD\xF3nde estamos exactamente?"
+  - nombrePersonaje: "T\xFA"
+    texto: He llegado hace poco y-
+  - nombrePersonaje: Rey
+    texto: "Este lugar puedes considerarlo un para\xEDso."
+  - nombrePersonaje: "T\xFA"
+    texto: "\xBFPara\xEDso? Eso no responde a-"
+  - nombrePersonaje: Rey
+    texto: "Si no me crees, mira a tu alrededor. \xBFAcaso no rebosa de color?\r\n"
+  - nombrePersonaje: Rey
+    texto: "Aqu\xED la belleza y felicidad es lo que predomina."
+  - nombrePersonaje: "T\xFA"
+    texto: ...
+  - nombrePersonaje: Rey
+    texto: "Mira, entiendo tu confusi\xF3n, pero no te preocupes."
+  - nombrePersonaje: Rey
+    texto: "En este lugar existe la magia y la armon\xEDa."
+  - nombrePersonaje: "T\xFA"
+    texto: Pero yo vengo de otro sitio.
+  - nombrePersonaje: "T\xFA"
+    texto: "He entrado aqu\xED y no s\xE9 qu\xE9 est\xE1 pasando."
+  - nombrePersonaje: "T\xFA"
+    texto: "\xBFPodr\xEDa explicarme al menos eso? Nadie m\xE1s me da respuestas
+      claras."
+  - nombrePersonaje: "T\xFA"
+    texto: Y ya si me dices como volver a mi casa...
+  - nombrePersonaje: Rey
+    texto: "Entiendo tu frustraci\xF3n, pero, siendo sinceros, yo tampoco puedo darte
+      esas respuestas."
+  - nombrePersonaje: Rey
+    texto: "No conozco los detalles que c\xF3mo llegaste al bosque."
+  - nombrePersonaje: "T\xFA"
+    texto: (<i>mira hacia la palanca<i>)
+  - nombrePersonaje: "T\xFA"
+    texto: "Una pregunta. \xBFPor qu\xE9 hay una palanca en la sala del trono?\r\n"
+  - nombrePersonaje: Rey
+    texto: "Esta palanca abre la tesorer\xEDa.Entiende que despu\xE9s de todo, soy
+      un rey.\r\n"
+  - nombrePersonaje: "T\xFA"
+    texto: "Yo\u2026 Eh, perdona. Simplemente ten\xEDa curiosidad."
+  - nombrePersonaje: Rey
+    texto: "Est\xE1 bien. Lo entiendo. \xBFAlguna pregunta m\xE1s? "
+  - nombrePersonaje: "T\xFA"
+    texto: "S\xED, una \xFAltima, si me permite."
+  - nombrePersonaje: Rey
+    texto: Adelante.
+  - nombrePersonaje: "T\xFA"
+    texto: "\xBFSabes si alguien m\xE1s lleg\xF3 a trav\xE9s de un portal?"
+  - nombrePersonaje: Rey
+    texto: ...
+  - nombrePersonaje: Rey
+    texto: "Se dice que en alg\xFAn lugar de este bosque existe un manantial. "
+  - nombrePersonaje: Rey
+    texto: "Su agua bendita te dar\xE1 la respuesta que buscas."
+  - nombrePersonaje: "T\xFA"
+    texto: "\xBFUn\u2026 manantial? "
+  - nombrePersonaje: Rey
+    texto: "Es un lugar muy escondido. Lamentablemente no s\xE9 exactamente d\xF3nde
+      est\xE1. "
+  - nombrePersonaje: Rey
+    texto: Puede que ese bichito que iba contigo sepa algo.
+  - nombrePersonaje: "T\xFA"
+    texto: "Si de esa forma encuentro la manera de volver\u2026  Gracias por cont\xE1rmelo. "
+  - nombrePersonaje: Rey
+    texto: 'Sin problema. Es el deber de un rey ayudar a sus ciudadanos. '
+  - nombrePersonaje: Rey
+    texto: "Ah, y, ya que est\xE1s, \xBFpor qu\xE9 no observas el paisaje? "
+  - nombrePersonaje: Rey
+    texto: 'Respira hondo y siente la magia. '
+  - nombrePersonaje: "T\xFA"
+    texto: "Lo tendr\xE9 en cuenta, supongo. "
+  avanceAutomatico: 0
+  duracionLinea: 2

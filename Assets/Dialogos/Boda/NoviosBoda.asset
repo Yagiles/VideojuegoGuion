@@ -26,9 +26,9 @@ MonoBehaviour:
   - nombrePersonaje: "Ping\xFCino"
     texto: "Me vas a poner colorado pajarita m\xEDa."
   - nombrePersonaje: "Ping\xFCino"
-    texto: <i>se besan<i>
+    texto: (<i>se besan<i>)
   - nombrePersonaje: "T\xFA"
-    texto: "<i>inc\xF3modo<i>"
+    texto: "(<i>inc\xF3modo<i>)"
   - nombrePersonaje: "T\xFA"
     texto: Oigan, creo que ha habido un malentendido.
   - nombrePersonaje: "T\xFA"
@@ -36,7 +36,7 @@ MonoBehaviour:
   - nombrePersonaje: "T\xFA"
     texto: "\xBFAlguien podr\xEDa decirme qu\xE9 est\xE1 pasando?"
   - nombrePersonaje: "Cacat\xFAa"
-    texto: "Cari\xF1o, \xBFest\xE1s bien?"
+    texto: "Cielo, \xBFest\xE1s bien?"
   - nombrePersonaje: "Cacat\xFAa"
     texto: "No est\xE1s teniendo ning\xFAn sentido."
   - nombrePersonaje: "Ping\xFCino"
