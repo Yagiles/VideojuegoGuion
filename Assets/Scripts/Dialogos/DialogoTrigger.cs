@@ -18,8 +18,6 @@ public class DialogoTrigger : MonoBehaviour
     public DialogoManager dialogoManager;
 
     private bool jugadorDentro = false;
-    private bool dialogoEspecialYaVisto = false; // Opcional: para no repetirlo
-
     void Update()
     {
         if (jugadorDentro && Input.GetKeyDown(KeyCode.E))

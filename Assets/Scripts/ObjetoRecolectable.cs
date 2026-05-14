@@ -10,7 +10,7 @@ public class ObjetoRecolectable : MonoBehaviour
         if (jugadorDentro && Input.GetKeyDown(KeyCode.E))
         {
             InventarioManager.Instance.AñadirObjeto(objetoData);
-            Debug.Log("Recogido: " + objetoData.nombreObjeto);
+            FindObjectOfType<InventarioUI>().RefrescarUI();
             gameObject.SetActive(false);
         }
     }

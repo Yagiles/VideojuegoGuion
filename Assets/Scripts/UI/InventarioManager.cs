@@ -4,8 +4,7 @@ using System.Collections.Generic;
 public class InventarioManager : MonoBehaviour
 {
     public static InventarioManager Instance;
-
-    private List<ObjetoData> objetos = new List<ObjetoData>();
+    private ObjetoData[] objetos = new ObjetoData[4]; // 4 slots fijos
 
     void Awake()
     {
@@ -18,22 +17,41 @@ public class InventarioManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
+    void Start()
+    {
+        // Start se ejecuta después de que todos los objetos están en escena
+        InventarioUI ui = FindObjectOfType<InventarioUI>();
+        if (ui != null)
+            DontDestroyOnLoad(ui.gameObject.transform.root.gameObject);
+        else
+            Debug.Log("InventarioUI no encontrado");
+    }
+
     public void AñadirObjeto(ObjetoData objeto)
     {
-        if (!objetos.Contains(objeto))
+        for (int i = 0; i < objetos.Length; i++)
         {
-            objetos.Add(objeto);
-            Debug.Log("Objeto añadido: " + objeto.nombreObjeto);
+            if (objetos[i] == null)
+            {
+                objetos[i] = objeto;
+                Debug.Log("Objeto añadido en slot " + i + ": " + objeto.nombreObjeto);
+                return;
+            }
         }
+        Debug.Log("Inventario lleno");
     }
 
     public bool TieneObjeto(ObjetoData objeto)
     {
-        return objetos.Contains(objeto);
+        for (int i = 0; i < objetos.Length; i++)
+        {
+            if (objetos[i] == objeto) return true;
+        }
+        return false;
     }
 
-    public List<ObjetoData> GetObjetos()
+    public ObjetoData GetObjeto(int slot)
     {
-        return objetos;
+        return objetos[slot];
     }
 }
