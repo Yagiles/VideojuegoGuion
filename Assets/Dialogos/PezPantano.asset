@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e28186e85056be5458f4bb9cfbfbff22, type: 3}
+  m_Name: PezPantano
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoData
+  lineas:
+  - nombrePersonaje: Franfishco
+    texto: "\xA1Anda! Pero si eres t\xFA otra vez"
+  - nombrePersonaje: Franfishco
+    texto: 'Antes en la boda y ahora vienes a visitarme. '
+  - nombrePersonaje: Franfishco
+    texto: "Ser\xE1 mi d\xEDa de suerte"
+  - nombrePersonaje: Franfishco
+    texto: "\xBFNecesitas algo?"
+  - nombrePersonaje: Franfishco
+    texto: Te veo preocupado
+  - nombrePersonaje: "T\xFA"
+    texto: Hola. Estamos buscando un lugar.
+  - nombrePersonaje: "T\xFA"
+    texto: "\xBFSabes d\xF3nde puede haber un manantial?"
+  - nombrePersonaje: Franfishco
+    texto: "\xBFManantial? No s\xE9 nada."
+  - nombrePersonaje: Franfishco
+    texto: "A m\xED s\xF3lo me interesa el camino de la pesca."
+  - nombrePersonaje: "T\xFA"
+    texto: Ah...vale...
+  - nombrePersonaje: Franfishco
+    texto: "Aunque si busc\xE1is informaci\xF3n."
+  - nombrePersonaje: Franfishco
+    texto: "Tengo a un amigo en el mercado que quiz\xE1s os pueda ayudar.\r\n"
+  - nombrePersonaje: "T\xFA"
+    texto: "\xBFDe verdad?"
+  - nombrePersonaje: Franfishco
+    texto: No, era broma.
+  - nombrePersonaje: Franfishco
+    texto: "(<i>se r\xEDe<i>)"
+  - nombrePersonaje: Franfishco
+    texto: "\xA1Qu\xE9 risa! Pero s\xED, mi amigo existe y lo puedes encontrar en
+      el mercado."
+  - nombrePersonaje: Franfishco
+    texto: "Es due\xF1o de un puesto con forma de cubo de basura."
+  - nombrePersonaje: "T\xFA"
+    texto: Muchas gracias.
+  - nombrePersonaje: "T\xFA"
+    texto: "No hay de qu\xE9. Hasta pronto. "
+  avanceAutomatico: 0
+  duracionLinea: 2

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e28186e85056be5458f4bb9cfbfbff22, type: 3}
+  m_Name: GuiaPantano
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoData
+  lineas:
+  - nombrePersonaje: "T\xFA"
+    texto: ' Oye, esto no es el manantial'
+  - nombrePersonaje: "Gu\xEDa"
+    texto: "Hmm\u2026 No lo parece,no."
+  - nombrePersonaje: "T\xFA"
+    texto: "No me tomes el pelo, no es momento para tonter\xEDas.\r\n"
+  - nombrePersonaje: "Gu\xEDa"
+    texto: "Ey, ey. Rel\xE1jate. "
+  - nombrePersonaje: "Gu\xEDa"
+    texto: "Todo el mundo comete errores, \xBFcierto?\r\n"
+  - nombrePersonaje: "T\xFA"
+    texto: "D\xE9jate de bromas. De d\xF3nde vengo el tiempo es oro.\r\n"
+  - nombrePersonaje: "Gu\xEDa"
+    texto: "Ah, qu\xE9 intenso.\r\n"
+  avanceAutomatico: 0
+  duracionLinea: 2

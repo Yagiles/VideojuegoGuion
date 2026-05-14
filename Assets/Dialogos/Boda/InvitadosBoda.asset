@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: InvitadosBoda
   m_EditorClassIdentifier: Assembly-CSharp::DialogoData
   lineas:
-  - nombrePersonaje: Pez
+  - nombrePersonaje: Franfishco
     texto: "Ay, \xA1hola! \xA1Cu\xE1nto tiempo!"
-  - nombrePersonaje: Pez
+  - nombrePersonaje: Franfishco
     texto: Me alegro que hayas venido.
-  - nombrePersonaje: Pez
+  - nombrePersonaje: Franfishco
     texto: "Llevabas tanto tiempo desaparecido que no sab\xEDa si lo har\xEDas."
   - nombrePersonaje: "T\xFA"
     texto: Disculpe, pero...
@@ -33,9 +33,9 @@ MonoBehaviour:
     texto: "S\xED, supongo..."
   - nombrePersonaje: "T\xFA"
     texto: "\xBFMe podr\xEDa explicar alguno qu\xE9 es este sitio?"
-  - nombrePersonaje: Pez
-    texto: <i>Mira hacia los lados, confuso<i>
-  - nombrePersonaje: Pez
+  - nombrePersonaje: Franfishco
+    texto: (<i>Mira hacia los lados, confuso<i>)
+  - nombrePersonaje: Franfishco
     texto: "\xBFEl bosque?"
   - nombrePersonaje: "T\xFA"
     texto: "S\xED. El bosque y...vosotros."
