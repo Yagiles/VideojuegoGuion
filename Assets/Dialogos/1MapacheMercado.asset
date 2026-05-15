@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e28186e85056be5458f4bb9cfbfbff22, type: 3}
+  m_Name: 1MapacheMercado
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoData
+  lineas:
+  - nombrePersonaje: Bell
+    texto: (<i>bostezo<I>)
+  - nombrePersonaje: Bell
+    texto: Creo que voy a descansar los ojos un ratillo.
+  - nombrePersonaje: "T\xFA"
+    texto: Creo que este es el cubo de basura.
+  - nombrePersonaje: Bell
+    texto: Oh, vamos. No insultes mi puesto, porfa.
+  - nombrePersonaje: Bell
+    texto: "Ya sabes lo mucho que me cost\xF3 encontrarlo."
+  - nombrePersonaje: "T\xFA"
+    texto: "Ah, lo siento. No pretend\xEDa insultarlo"
+  - nombrePersonaje: Bell
+    texto: "Est\xE1 bien, est\xE1 bien. No te cobrar\xE9 por ello."
+  - nombrePersonaje: Bell
+    texto: "\xBFY bien? \xBFQu\xE9 te cuentas por aqu\xED?"
+  - nombrePersonaje: "T\xFA"
+    texto: Estoy buscando un manantial.El pez del pantano me ha mandado a buscarte.
+  - nombrePersonaje: "T\xFA"
+    texto: "Me gustar\xEDa tener alguna pista o informaci\xF3n que me lleve a \xE9l."
+  - nombrePersonaje: Bell
+    texto: "Ah, el viejo Franfishco. M\xE1ndale saludos de mi parte. "
+  - nombrePersonaje: Bell
+    texto: "As\xED que un manantial, \xBFeh? "
+  - nombrePersonaje: Bell
+    texto: "Hmm\u2026 Est\xE1 bien. Aunque mi puesto est\xE1 algo desordenado."
+  - nombrePersonaje: Bell
+    texto: "Ah, ya s\xE9. Mientras encuentro la informaci\xF3n que buscas, \xBFpor
+      qu\xE9 no me haces un favor?\r\n"
+  - nombrePersonaje: "T\xFA"
+    texto: "\xBFQu\xE9 favor?\r\n"
+  - nombrePersonaje: Bell
+    texto: "La verdad es que \xFAltimamente no he podido pegar ojo."
+  - nombrePersonaje: Bell
+    texto: "Me gustar\xEDa tener algo c\xF3modo para echarme una siestecita."
+  - nombrePersonaje: Bell
+    texto: "Si me traes una almohada u otra cosa blandita te har\xE9 un descuento
+      del 100%."
+  - nombrePersonaje: Bell
+    texto: "Vamos, te conozco de sobra. S\xE9 que te viene muy bien."
+  - nombrePersonaje: "T\xFA"
+    texto: "Hmm\u2026 Es una muy buena oferta."
+  - nombrePersonaje: "T\xFA"
+    texto: "Est\xE1 bien. Trato hecho."
+  - nombrePersonaje: Bell
+    texto: "Si pasas por una cueva, ac\xE9rcate a la tienda de pociones."
+  - nombrePersonaje: Bell
+    texto: "Puede que encuentres algo que te ayude con tu misi\xF3n. "
+  avanceAutomatico: 0
+  duracionLinea: 2
