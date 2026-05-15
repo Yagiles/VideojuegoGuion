@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8546117129206382757}
   - component: {fileID: 2230166553878002985}
   m_Layer: 0
-  m_Name: juglar_iddle_spritesheet_0
+  m_Name: juglar_iddle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
