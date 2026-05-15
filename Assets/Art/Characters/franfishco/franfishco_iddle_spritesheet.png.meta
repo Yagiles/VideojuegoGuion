@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: a6b6c8c54693fcd4fb5bfe77dcedd676
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4020775743832212964
+    second: franfishco_iddle_spritesheet_0
+  - first:
+      213: 3953533203265068263
+    second: franfishco_iddle_spritesheet_1
+  - first:
+      213: -6299633883207621860
+    second: franfishco_iddle_spritesheet_2
+  - first:
+      213: -8545060867817731178
+    second: franfishco_iddle_spritesheet_3
+  - first:
+      213: -8941704883910201593
+    second: franfishco_iddle_spritesheet_4
+  - first:
+      213: -8513173514009295516
+    second: franfishco_iddle_spritesheet_5
+  - first:
+      213: 1700663488855630640
+    second: franfishco_iddle_spritesheet_6
+  - first:
+      213: -515364346952614276
+    second: franfishco_iddle_spritesheet_7
+  - first:
+      213: 2480616331850430255
+    second: franfishco_iddle_spritesheet_8
+  - first:
+      213: 1842050894582578347
+    second: franfishco_iddle_spritesheet_9
+  - first:
+      213: -8571429120291556940
+    second: franfishco_iddle_spritesheet_10
+  - first:
+      213: 719527967712504870
+    second: franfishco_iddle_spritesheet_11
+  - first:
+      213: 7445312347382388666
+    second: franfishco_iddle_spritesheet_12
+  - first:
+      213: 5975267232866150983
+    second: franfishco_iddle_spritesheet_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: franfishco_iddle_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 32
+        width: 224
+        height: 465
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e540ac6c3aacc730800000000000000
+      internalID: 4020775743832212964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: franfishco_iddle_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 32
+        width: 225
+        height: 466
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ec935c6085cdd630800000000000000
+      internalID: 3953533203265068263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: franfishco_iddle_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 29
+        width: 225
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1325603c543398a0800000000000000
+      internalID: -6299633883207621860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: franfishco_iddle_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 28
+        width: 226
+        height: 469
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69b02a51a68d96980800000000000000
+      internalID: -8545060867817731178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: franfishco_iddle_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 1687
+        y: 26
+        width: 226
+        height: 471
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70f282488cea8e380800000000000000
+      internalID: -8941704883910201593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: franfishco_iddle_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 2002
+        y: 25
+        width: 227
+        height: 473
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46546323bc12bd980800000000000000
+      internalID: -8513173514009295516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: franfishco_iddle_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 2406
+        y: 29
+        width: 229
+        height: 475
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03367bfbe68f99710800000000000000
+      internalID: 1700663488855630640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: franfishco_iddle_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 2755
+        y: 32
+        width: 227
+        height: 475
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7efcf16bde09d8f0800000000000000
+      internalID: -515364346952614276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: franfishco_iddle_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 3115
+        y: 32
+        width: 229
+        height: 475
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f273af3396bec6220800000000000000
+      internalID: 2480616331850430255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: franfishco_iddle_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 3497
+        y: 28
+        width: 227
+        height: 473
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bacf8cd6787409910800000000000000
+      internalID: 1842050894582578347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: franfishco_iddle_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 3848
+        y: 25
+        width: 226
+        height: 471
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b13593e0aa2c0980800000000000000
+      internalID: -8571429120291556940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: franfishco_iddle_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 4208
+        y: 25
+        width: 226
+        height: 469
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62c6679dfd64cf900800000000000000
+      internalID: 719527967712504870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: franfishco_iddle_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 4570
+        y: 25
+        width: 225
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab79e8b0220135760800000000000000
+      internalID: 7445312347382388666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: franfishco_iddle_spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 4926
+        y: 23
+        width: 225
+        height: 466
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74aa405d3e96ce250800000000000000
+      internalID: 5975267232866150983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      franfishco_iddle_spritesheet_0: 4020775743832212964
+      franfishco_iddle_spritesheet_1: 3953533203265068263
+      franfishco_iddle_spritesheet_10: -8571429120291556940
+      franfishco_iddle_spritesheet_11: 719527967712504870
+      franfishco_iddle_spritesheet_12: 7445312347382388666
+      franfishco_iddle_spritesheet_13: 5975267232866150983
+      franfishco_iddle_spritesheet_2: -6299633883207621860
+      franfishco_iddle_spritesheet_3: -8545060867817731178
+      franfishco_iddle_spritesheet_4: -8941704883910201593
+      franfishco_iddle_spritesheet_5: -8513173514009295516
+      franfishco_iddle_spritesheet_6: 1700663488855630640
+      franfishco_iddle_spritesheet_7: -515364346952614276
+      franfishco_iddle_spritesheet_8: 2480616331850430255
+      franfishco_iddle_spritesheet_9: 1842050894582578347
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
