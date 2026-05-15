@@ -5,13 +5,14 @@ public class EstadoDialogos : MonoBehaviour
 {
     public static EstadoDialogos instancia;
 
-    private HashSet<string> personajesHablados = new HashSet<string>();
+    private HashSet<string> dialogosCompletados = new HashSet<string>();
 
     private void Awake()
     {
         if (instancia == null)
         {
             instancia = this;
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
@@ -19,13 +20,13 @@ public class EstadoDialogos : MonoBehaviour
         }
     }
 
-    public void MarcarComoHablado(string idPersonaje)
+    public void MarcarComoHablado(string id)
     {
-        personajesHablados.Add(idPersonaje);
+        dialogosCompletados.Add(id);
     }
 
-    public bool HaHabladoCon(string idPersonaje)
+    public bool HaHabladoCon(string id)
     {
-        return personajesHablados.Contains(idPersonaje);
+        return dialogosCompletados.Contains(id);
     }
 }

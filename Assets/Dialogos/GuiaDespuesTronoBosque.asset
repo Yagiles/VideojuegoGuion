@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e28186e85056be5458f4bb9cfbfbff22, type: 3}
-  m_Name: DespuesTronoBosque
+  m_Name: GuiaDespuesTronoBosque
   m_EditorClassIdentifier: Assembly-CSharp::DialogoData
   lineas:
   - nombrePersonaje: "Gu\xEDa"
@@ -22,7 +22,7 @@ MonoBehaviour:
   - nombrePersonaje: "Gu\xEDa"
     texto: ...
   - nombrePersonaje: "T\xFA"
-    texto: "Mira, da igual.\xBFT\xFA no conocer\xE1s un lugar secreto-"
+    texto: "Mira, da igual. \xBFT\xFA no conocer\xE1s un lugar secreto-"
   - nombrePersonaje: "Gu\xEDa"
     texto: "\xBFHablas del manantial?\r\n"
   - nombrePersonaje: "T\xFA"
@@ -31,5 +31,7 @@ MonoBehaviour:
     texto: "Creo recordar que era por aqu\xED..."
   - nombrePersonaje: "Gu\xEDa"
     texto: "No, por all\xED. S\xED, s\xED, es verdad, era por all\xED."
+  - nombrePersonaje: "Gu\xEDa"
+    texto: "S\xEDgueme."
   avanceAutomatico: 0
   duracionLinea: 2
