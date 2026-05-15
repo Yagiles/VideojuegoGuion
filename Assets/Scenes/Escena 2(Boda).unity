@@ -2276,61 +2276,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1232771286862112560, guid: 8fa7b1c6936012c42b65c87fa4581149, type: 3}
-      propertyPath: m_margin.x
-      value: 44.396603
-      objectReference: {fileID: 0}
-    - target: {fileID: 1232771286862112560, guid: 8fa7b1c6936012c42b65c87fa4581149, type: 3}
-      propertyPath: m_margin.z
-      value: -981.80505
-      objectReference: {fileID: 0}
-    - target: {fileID: 2430411551604772083, guid: 8fa7b1c6936012c42b65c87fa4581149, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -438
-      objectReference: {fileID: 0}
-    - target: {fileID: 4433989224335726063, guid: 8fa7b1c6936012c42b65c87fa4581149, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 467
-      objectReference: {fileID: 0}
-    - target: {fileID: 5862520522937232917, guid: 8fa7b1c6936012c42b65c87fa4581149, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 261.394
-      objectReference: {fileID: 0}
-    - target: {fileID: 5862520522937232917, guid: 8fa7b1c6936012c42b65c87fa4581149, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5862520522937232917, guid: 8fa7b1c6936012c42b65c87fa4581149, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5862520522937232917, guid: 8fa7b1c6936012c42b65c87fa4581149, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5862520522937232917, guid: 8fa7b1c6936012c42b65c87fa4581149, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 5862520522937232917, guid: 8fa7b1c6936012c42b65c87fa4581149, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -168
-      objectReference: {fileID: 0}
-    - target: {fileID: 5862520522937232917, guid: 8fa7b1c6936012c42b65c87fa4581149, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6355052802726140185, guid: 8fa7b1c6936012c42b65c87fa4581149, type: 3}
       propertyPath: m_Name
       value: CanvasDialogo
-      objectReference: {fileID: 0}
-    - target: {fileID: 6827299104529022383, guid: 8fa7b1c6936012c42b65c87fa4581149, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -462
-      objectReference: {fileID: 0}
-    - target: {fileID: 6827299104529022383, guid: 8fa7b1c6936012c42b65c87fa4581149, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 46
       objectReference: {fileID: 0}
     - target: {fileID: 7371503846051895024, guid: 8fa7b1c6936012c42b65c87fa4581149, type: 3}
       propertyPath: m_Pivot.x
