@@ -7,7 +7,7 @@ public class ObjetoRecolectable : MonoBehaviour
 
     void Update()
     {
-        if (jugadorDentro && Input.GetKeyDown(KeyCode.E))
+        if (jugadorDentro && Input.GetKeyDown(KeyCode.F))
         {
             InventarioManager.Instance.AñadirObjeto(objetoData);
             FindObjectOfType<InventarioUI>().RefrescarUI();

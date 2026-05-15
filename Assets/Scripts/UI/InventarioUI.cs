@@ -14,19 +14,17 @@ public class InventarioUI : MonoBehaviour
     public TMP_Text textoDescripcionPopup;
 
     private KeyCode[] teclas = { KeyCode.Alpha1, KeyCode.Alpha2, KeyCode.Alpha3, KeyCode.Alpha4 };
+    private GameObject canvasInventario;
 
     void Awake()
     {
         DontDestroyOnLoad(gameObject);
 
-        // Busca el CanvasInventario y hazlo persistente también
-        Canvas canvas = GetComponentInChildren<Canvas>();
-        if (canvas == null)
+        canvasInventario = GameObject.Find("CanvasInventario");
+        if (canvasInventario != null)
         {
-            // Si InventarioUI no contiene el canvas, búscalo por nombre
-            GameObject canvasObj = GameObject.Find("CanvasInventario");
-            if (canvasObj != null)
-                DontDestroyOnLoad(canvasObj);
+            DontDestroyOnLoad(canvasInventario);
+            canvasInventario.SetActive(false); // Oculto al inicio
         }
     }
 
@@ -65,6 +63,10 @@ public class InventarioUI : MonoBehaviour
 
     public void RefrescarUI()
     {
+        // Activa el canvas cuando se recoge el primer objeto
+        if (canvasInventario != null && !canvasInventario.activeSelf)
+            canvasInventario.SetActive(true);
+
         for (int i = 0; i < iconosSlots.Length; i++)
         {
             ObjetoData objeto = InventarioManager.Instance.GetObjeto(i);

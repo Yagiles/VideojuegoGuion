@@ -20,7 +20,7 @@ public class InventarioManager : MonoBehaviour
     void Start()
     {
         // Start se ejecuta después de que todos los objetos están en escena
-        InventarioUI ui = FindObjectOfType<InventarioUI>();
+        InventarioUI ui = FindFirstObjectByType<InventarioUI>();
         if (ui != null)
             DontDestroyOnLoad(ui.gameObject.transform.root.gameObject);
         else
