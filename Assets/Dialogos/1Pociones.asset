@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e28186e85056be5458f4bb9cfbfbff22, type: 3}
+  m_Name: 1Pociones
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoData
+  lineas:
+  - nombrePersonaje: "Gu\xEDa"
+    texto: "Hm\u2026 No parece haber nadie.\r\n"
+  - nombrePersonaje: "T\xFA"
+    texto: "\xBFEs la cueva correcta?"
+  - nombrePersonaje: Poc
+    texto: Bienvenidos a mi humilde morada.
+  - nombrePersonaje: "T\xFA"
+    texto: "\xA1\xA1Ahh!!"
+  - nombrePersonaje: "Gu\xEDa"
+    texto: "\xA1Qu\xE9 susto!"
+  - nombrePersonaje: Poc
+    texto: (<i>suspiro<i>)
+  - nombrePersonaje: Poc
+    texto: "Siempre ocurre lo mismo\u2026"
+  - nombrePersonaje: Poc
+    texto: "\xBFNo me reconoc\xE9is?"
+  - nombrePersonaje: "T\xFA"
+    texto: Eh...no.
+  - nombrePersonaje: "Gu\xEDa"
+    texto: "Hombre Poc. Eres t\xFA."
+  - nombrePersonaje: "Gu\xEDa"
+    texto: "No te reconoc\xEDa tan a oscuras. \xBFQu\xE9 haces aqu\xED metido?"
+  - nombrePersonaje: Poc
+    texto: "La alquimia requiere toda mi atenci\xF3n."
+  - nombrePersonaje: Poc
+    texto: "Aqu\xED meter\xEDa lo de que te pide la planta, bla, bla, bla"
+  avanceAutomatico: 0
+  duracionLinea: 2
