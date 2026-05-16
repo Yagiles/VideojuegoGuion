@@ -2,6 +2,35 @@
 using UnityEngine;
 using TMPro;
 
+[System.Serializable]
+public class EventoBesoDialogo
+{
+    public DialogoData dialogo;
+    public int despuesDeLinea;
+    public BesoPersonajes beso;
+    [HideInInspector] public bool ejecutado;
+}
+
+[System.Serializable]
+public class EventoFlip
+{
+    public DialogoData dialogo;
+    public int despuesDeLinea;
+    public FlipPersonaje flip;
+    [HideInInspector] public bool ejecutado;
+}
+
+[System.Serializable]
+public class EventoMovimientoGuiaDialogoBosque
+{
+    public DialogoData dialogo;
+    public int despuesDeLinea;
+    public CinematicaGuiaMovimiento movimiento;
+
+    [HideInInspector]
+    public bool ejecutado;
+}
+
 public class DialogoManager : MonoBehaviour
 {
     public GameObject panelDialogo;
@@ -19,12 +48,21 @@ public class DialogoManager : MonoBehaviour
 
     private Coroutine coroutineAutoDialogo;
 
-    //efecto maquina escribir
+    [Header("Eventos de beso")]
+    public EventoBesoDialogo[] eventosBeso;
+
+    [Header("Eventos de flip")]
+    public EventoFlip[] eventosFlip;
+
+    [Header("Eventos de movimiento")]
+    public EventoMovimientoGuiaDialogoBosque[] eventosMovimiento;
+
+    private bool ejecutandoEventoMovimiento = false;
+
     [Header("Efecto escritura")]
     public float velocidadEscritura = 0.03f;
 
     private bool escribiendo = false;
-
     private Coroutine coroutineEscritura;
 
     void Start()
@@ -39,15 +77,14 @@ public class DialogoManager : MonoBehaviour
 
     void Update()
     {
-        
-        if (dialogoActivo && dialogoActual != null && !dialogoActual.avanceAutomatico && Input.GetKeyDown(KeyCode.E) )
+        if (dialogoActivo && dialogoActual != null && !dialogoActual.avanceAutomatico && Input.GetKeyDown(KeyCode.E))
         {
-            // Si está escribiendo → completar texto
+            if (ejecutandoEventoMovimiento) return;
+
             if (escribiendo)
             {
                 CompletarTexto();
             }
-            // Si ya terminó → avanzar
             else if (puedeAvanzar)
             {
                 SiguienteLinea();
@@ -67,6 +104,11 @@ public class DialogoManager : MonoBehaviour
 
         dialogoActual = dialogo;
         indiceLinea = 0;
+
+        ReiniciarEventosBeso();
+        ReiniciarEventosFlip();
+        ReiniciarEventosMovimiento();
+
         dialogoActivo = true;
         puedeAvanzar = false;
 
@@ -95,30 +137,38 @@ public class DialogoManager : MonoBehaviour
 
     void MostrarLinea()
     {
-        /*
-        textoNombre.text = dialogoActual.lineas[indiceLinea].nombrePersonaje;
-        textoDialogo.text = dialogoActual.lineas[indiceLinea].texto;
-        */
         puedeAvanzar = false;
 
-        textoNombre.text =
-            dialogoActual.lineas[indiceLinea].nombrePersonaje;
+        textoNombre.text = dialogoActual.lineas[indiceLinea].nombrePersonaje;
 
         if (coroutineEscritura != null)
         {
             StopCoroutine(coroutineEscritura);
         }
 
-        coroutineEscritura =
-            StartCoroutine(
-                EscribirTexto(
-                    dialogoActual.lineas[indiceLinea].texto
-                )
-            );
+        coroutineEscritura = StartCoroutine(
+            EscribirTexto(dialogoActual.lineas[indiceLinea].texto)
+        );
     }
 
     void SiguienteLinea()
     {
+        if (ejecutandoEventoMovimiento) return;
+
+        ComprobarEventosBeso();
+        ComprobarEventosFlip();
+
+        int lineaActual = indiceLinea + 1;
+
+        EventoMovimientoGuiaDialogoBosque eventoMovimiento =
+            BuscarEventoMovimiento(lineaActual);
+
+        if (eventoMovimiento != null)
+        {
+            StartCoroutine(EjecutarMovimientoDespuesDeLinea(eventoMovimiento));
+            return;
+        }
+
         indiceLinea++;
 
         if (indiceLinea >= dialogoActual.lineas.Length)
@@ -154,6 +204,131 @@ public class DialogoManager : MonoBehaviour
         alTerminarDialogo = null;
     }
 
+    void ComprobarEventosBeso()
+    {
+        if (eventosBeso == null || dialogoActual == null) return;
+
+        int lineaActual = indiceLinea + 1;
+
+        for (int i = 0; i < eventosBeso.Length; i++)
+        {
+            EventoBesoDialogo evento = eventosBeso[i];
+
+            if (evento == null) continue;
+
+            if (
+                !evento.ejecutado &&
+                evento.dialogo == dialogoActual &&
+                evento.despuesDeLinea == lineaActual &&
+                evento.beso != null
+            )
+            {
+                evento.beso.EmpezarBeso();
+                evento.ejecutado = true;
+            }
+        }
+    }
+
+    void ReiniciarEventosBeso()
+    {
+        if (eventosBeso == null) return;
+
+        for (int i = 0; i < eventosBeso.Length; i++)
+        {
+            eventosBeso[i].ejecutado = false;
+        }
+    }
+
+    void ComprobarEventosFlip()
+    {
+        if (eventosFlip == null || dialogoActual == null) return;
+
+        int lineaActual = indiceLinea + 1;
+
+        for (int i = 0; i < eventosFlip.Length; i++)
+        {
+            EventoFlip evento = eventosFlip[i];
+
+            if (evento == null) continue;
+
+            if (
+                !evento.ejecutado &&
+                evento.dialogo == dialogoActual &&
+                evento.despuesDeLinea == lineaActual &&
+                evento.flip != null
+            )
+            {
+                evento.flip.HacerDobleFlip();
+                evento.ejecutado = true;
+            }
+        }
+    }
+
+    void ReiniciarEventosFlip()
+    {
+        if (eventosFlip == null) return;
+
+        for (int i = 0; i < eventosFlip.Length; i++)
+        {
+            eventosFlip[i].ejecutado = false;
+        }
+    }
+
+    EventoMovimientoGuiaDialogoBosque BuscarEventoMovimiento(int numeroLinea)
+    {
+        if (eventosMovimiento == null || dialogoActual == null)
+            return null;
+
+        for (int i = 0; i < eventosMovimiento.Length; i++)
+        {
+            EventoMovimientoGuiaDialogoBosque evento = eventosMovimiento[i];
+
+            if (
+                evento != null &&
+                !evento.ejecutado &&
+                evento.dialogo == dialogoActual &&
+                evento.despuesDeLinea == numeroLinea &&
+                evento.movimiento != null
+            )
+            {
+                return evento;
+            }
+        }
+
+        return null;
+    }
+
+    IEnumerator EjecutarMovimientoDespuesDeLinea(EventoMovimientoGuiaDialogoBosque evento)
+    {
+        ejecutandoEventoMovimiento = true;
+        evento.ejecutado = true;
+
+        yield return StartCoroutine(evento.movimiento.MoverDerecha());
+
+        ejecutandoEventoMovimiento = false;
+
+        indiceLinea++;
+
+        if (indiceLinea >= dialogoActual.lineas.Length)
+        {
+            TerminarDialogo();
+        }
+        else
+        {
+            MostrarLinea();
+        }
+    }
+
+    void ReiniciarEventosMovimiento()
+    {
+        if (eventosMovimiento == null) return;
+
+        for (int i = 0; i < eventosMovimiento.Length; i++)
+        {
+            eventosMovimiento[i].ejecutado = false;
+        }
+    }
+
     private IEnumerator ActivarAvance()
     {
         yield return null;
@@ -164,14 +339,12 @@ public class DialogoManager : MonoBehaviour
     {
         while (dialogoActivo)
         {
-            // yield return new WaitForSeconds(dialogoActual.duracionLinea);
             while (escribiendo)
             {
                 yield return null;
             }
 
             yield return new WaitForSeconds(dialogoActual.duracionLinea);
-            // 
 
             if (dialogoActivo)
             {
@@ -180,18 +353,15 @@ public class DialogoManager : MonoBehaviour
         }
     }
 
-    //añadido 
     IEnumerator EscribirTexto(string texto)
     {
         escribiendo = true;
-
         textoDialogo.text = "";
 
         bool dentroEtiqueta = false;
 
         foreach (char letra in texto)
         {
-            // Detectar inicio etiqueta TMP
             if (letra == '<')
             {
                 dentroEtiqueta = true;
@@ -199,14 +369,12 @@ public class DialogoManager : MonoBehaviour
 
             textoDialogo.text += letra;
 
-            // Detectar final etiqueta TMP
             if (letra == '>')
             {
                 dentroEtiqueta = false;
                 continue;
             }
 
-            // Solo esperar si NO estamos en etiqueta
             if (!dentroEtiqueta)
             {
                 yield return new WaitForSeconds(velocidadEscritura);
@@ -216,6 +384,7 @@ public class DialogoManager : MonoBehaviour
         escribiendo = false;
         puedeAvanzar = true;
     }
+
     void CompletarTexto()
     {
         if (coroutineEscritura != null)
@@ -223,8 +392,7 @@ public class DialogoManager : MonoBehaviour
             StopCoroutine(coroutineEscritura);
         }
 
-        textoDialogo.text =
-            dialogoActual.lineas[indiceLinea].texto;
+        textoDialogo.text = dialogoActual.lineas[indiceLinea].texto;
 
         escribiendo = false;
         puedeAvanzar = true;

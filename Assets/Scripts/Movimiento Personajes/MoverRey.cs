@@ -3,27 +3,45 @@ using UnityEngine;
 
 public class MoverRey : MonoBehaviour
 {
-    private float cantidadMoverse = 0.07f;
+    [Header("Movimiento")]
+    public float velocidad = 1.5f;
+    public float tiempoMoverse = 5f;
+
+    [Header("Personajes adicionales")]
+    public Transform juglar;
+
     private NPCInteractuable npcInteractuable;
+    private bool movimientoIniciado = false;
+
     private void Awake()
     {
         npcInteractuable = GetComponent<NPCInteractuable>();
     }
+
     void Update()
     {
-        if (npcInteractuable.dialogoTerminado)
+        if (npcInteractuable == null) return;
+
+        if (npcInteractuable.dialogoTerminado && !movimientoIniciado)
         {
+            movimientoIniciado = true;
             StartCoroutine(Moverse());
         }
     }
 
-    public IEnumerator Moverse()
+    IEnumerator Moverse()
     {
-        float tiempoMoverse = 120f;
         float tiempoTranscurrido = 0f;
+
         while (tiempoTranscurrido < tiempoMoverse)
         {
-            transform.Translate(Vector3.right * cantidadMoverse * Time.deltaTime);
+            Vector3 movimiento = Vector3.right * velocidad * Time.deltaTime;
+
+            transform.Translate(movimiento);
+
+            if (juglar != null)
+                juglar.Translate(movimiento);
+
             tiempoTranscurrido += Time.deltaTime;
             yield return null;
         }
