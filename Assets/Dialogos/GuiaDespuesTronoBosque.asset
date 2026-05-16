@@ -28,6 +28,8 @@ MonoBehaviour:
   - nombrePersonaje: "T\xFA"
     texto: "\xA1\xBFC\xF3mo lo has-?!"
   - nombrePersonaje: "Gu\xEDa"
+    texto: "Nunca he estado, pero he o\xEDdo rumores."
+  - nombrePersonaje: "Gu\xEDa"
     texto: "Creo recordar que era por aqu\xED..."
   - nombrePersonaje: "Gu\xEDa"
     texto: "No, por all\xED. S\xED, s\xED, es verdad, era por all\xED."
