@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccf2fa84aa4208e40a5bdf110ab622cc, type: 3}
+  m_Name: Cojin
+  m_EditorClassIdentifier: Assembly-CSharp::ObjetoData
+  nombreObjeto: Cojin
+  descripcion: "Blandito y c\xF3modo coj\xEDn. Ideal para cerrar los ojos y descansar."
+  icono: {fileID: 7436087583741867197, guid: 330c495e4959f6446b11a6f82addbdee, type: 3}
