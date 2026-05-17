@@ -16,6 +16,9 @@ public class CinematicaInicioDialogo : MonoBehaviour
     public MonoBehaviour scriptMovimientoJugador;
     public MonoBehaviour scriptMovimientoGuia;
 
+    [Header("Flip al terminar")]
+    public Transform personajeFlipX;
+
     [Header("Si la cinematica ya fue vista")]
     public Transform personajeAColocar;
     public Transform spawnFinal;
@@ -78,5 +81,13 @@ public class CinematicaInicioDialogo : MonoBehaviour
 
         if (scriptMovimientoGuia != null)
             scriptMovimientoGuia.enabled = true;
+
+        // FLIP EN X
+        if (personajeFlipX != null)
+        {
+            Vector3 escala = personajeFlipX.localScale;
+            escala.x *= -1;
+            personajeFlipX.localScale = escala;
+        }
     }
 }

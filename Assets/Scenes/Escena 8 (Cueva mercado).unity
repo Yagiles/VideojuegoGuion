@@ -3689,6 +3689,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: guia spritesheet
       objectReference: {fileID: 0}
+    - target: {fileID: 6261073063227897070, guid: 2c8657540bc6cbb468122c09e089d907, type: 3}
+      propertyPath: m_TagString
+      value: Guia
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -5,29 +5,29 @@ public class FlipPersonaje : MonoBehaviour
 {
     public SpriteRenderer sprite;
 
-    public float tiempoAntesVolver = 0.4f;
+    [Header("Cantidad de flips")]
+    public int numeroDeFlips = 1;
+
+    public float tiempoEntreFlips = 0.4f;
 
     private bool ejecutando = false;
 
-    public void HacerDobleFlip()
+    public void EjecutarFlip()
     {
         if (!ejecutando)
-            StartCoroutine(DobleFlip());
+            StartCoroutine(HacerFlips());
     }
 
-    IEnumerator DobleFlip()
+    IEnumerator HacerFlips()
     {
         ejecutando = true;
 
-        bool flipOriginal = sprite.flipX;
+        for (int i = 0; i < numeroDeFlips; i++)
+        {
+            sprite.flipX = !sprite.flipX;
 
-        // Mira al otro lado
-        sprite.flipX = !flipOriginal;
-
-        yield return new WaitForSeconds(tiempoAntesVolver);
-
-        // Vuelve a mirar al lado original
-        sprite.flipX = flipOriginal;
+            yield return new WaitForSeconds(tiempoEntreFlips);
+        }
 
         ejecutando = false;
     }
