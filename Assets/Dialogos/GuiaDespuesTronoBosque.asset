@@ -32,7 +32,9 @@ MonoBehaviour:
   - nombrePersonaje: "Gu\xEDa"
     texto: "Creo recordar que era por aqu\xED..."
   - nombrePersonaje: "Gu\xEDa"
-    texto: "No, por all\xED. S\xED, s\xED, es verdad, era por all\xED."
+    texto: 'No, espera... '
+  - nombrePersonaje: "Gu\xEDa"
+    texto: "Por all\xED. S\xED, s\xED, es verdad, era por all\xED."
   - nombrePersonaje: "Gu\xEDa"
     texto: "S\xEDgueme."
   avanceAutomatico: 0

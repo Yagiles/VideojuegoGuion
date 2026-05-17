@@ -258,7 +258,7 @@ public class DialogoManager : MonoBehaviour
                 evento.flip != null
             )
             {
-                evento.flip.HacerDobleFlip();
+                evento.flip.EjecutarFlip();
                 evento.ejecutado = true;
             }
         }
