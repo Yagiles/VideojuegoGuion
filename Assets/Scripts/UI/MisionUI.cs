@@ -27,7 +27,7 @@ public class MisionUI : MonoBehaviour
 
         MisionData mision = MisionManager.Instance.GetMisionActual();
 
-        if (mision == null)
+        if (mision == null || string.IsNullOrEmpty(mision.tituloMision))
         {
             panelMision.SetActive(false);
             return;

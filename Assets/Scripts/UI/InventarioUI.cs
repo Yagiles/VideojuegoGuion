@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class InventarioUI : MonoBehaviour
 {
@@ -75,5 +76,20 @@ public class InventarioUI : MonoBehaviour
             else
                 iconosSlots[i].sprite = null;
         }
+    }
+
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnScenaCargada;
+    }
+
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnScenaCargada;
+    }
+
+    void OnScenaCargada(Scene escena, LoadSceneMode mode)
+    {
+        RefrescarUI();
     }
 }

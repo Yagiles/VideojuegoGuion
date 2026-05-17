@@ -10,6 +10,7 @@ public class MisionManager : MonoBehaviour
     public List<MisionData> misiones;
 
     private int indiceMisionActual = 0;
+    private bool primeraEscena = true;
 
     void Awake()
     {
@@ -34,21 +35,27 @@ public class MisionManager : MonoBehaviour
 
     void OnScenaCargada(Scene escena, LoadSceneMode mode)
     {
+        // Ignora la primera carga
+        if (primeraEscena)
+        {
+            primeraEscena = false;
+            ActualizarUI();
+            return;
+        }
+
         if (indiceMisionActual >= misiones.Count) return;
 
         MisionData misionActual = misiones[indiceMisionActual];
 
         if (misionActual.seCompletaAlCambiarEscena)
-        {
-            // Comprueba si ya estamos en la escena correcta para mostrar la siguiente mision
+            CompletarMisionActual();
+        else
             ActualizarUI();
-        }
     }
 
     public void CompletarMisionActual()
     {
         if (indiceMisionActual >= misiones.Count) return;
-
         indiceMisionActual++;
         ActualizarUI();
     }
