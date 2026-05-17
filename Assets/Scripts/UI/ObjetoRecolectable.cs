@@ -12,6 +12,12 @@ public class ObjetoRecolectable : MonoBehaviour
             InventarioManager.Instance.AñadirObjeto(objetoData);
             FindObjectOfType<InventarioUI>().RefrescarUI();
             gameObject.SetActive(false);
+
+            MisionData misionActual = MisionManager.Instance.GetMisionActual();
+            if(misionActual != null && misionActual.objetoRequerido == objetoData)
+            {
+                MisionManager.Instance.CompletarMisionActual();
+            }
         }
     }
 
